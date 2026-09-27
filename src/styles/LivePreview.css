@@ -1,0 +1,101 @@
+.preview-card {
+
+    background: #1e293b;
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    color: white;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    min-height: 520px;
+}
+
+.preview-card h2{
+
+    margin-bottom:30px;
+
+    color:white;
+}
+
+.avatar{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:25px;
+}
+
+.initials{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#6d5cff,#8b5cf6);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:42px;
+
+    font-weight:bold;
+
+    color:white;
+}
+
+.avatar img{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid #8b5cf6;
+}
+
+.preview-card h3{
+
+    margin-bottom:18px;
+
+    font-size:28px;
+}
+
+.preview-card p{
+
+    color:#cbd5e1;
+
+    margin:14px 0;
+
+    font-size:17px;
+}
+.skills-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.skill-chip {
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: rgba(109, 92, 255, 0.2);
+    border: 1px solid rgba(139, 92, 246, 0.4);
+    color: #e2e8f0;
+    font-size: 13px;
+}

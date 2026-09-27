@@ -1,0 +1,1007 @@
+/* ===================================================
+   MENTOR SESSION MANAGEMENT
+   EDUCONNECT DARK PURPLE THEME
+=================================================== */
+
+.mentor-session-page {
+
+    min-height: 100vh;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 120px 8% 70px;
+
+    background: #0f172a;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* ===================================================
+   PAGE HEADER
+=================================================== */
+
+.session-page-header {
+
+    max-width: 1100px;
+
+    margin: 0 auto 35px;
+
+    text-align: center;
+}
+
+
+.session-page-header h1 {
+
+    color: white;
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    margin: 15px 0 8px;
+}
+
+
+.session-page-header p {
+
+    color: #94a3b8;
+
+    font-size: 16px;
+
+    margin: 0;
+}
+
+
+/* ===================================================
+   BACK BUTTON
+   LEFT ALIGNED
+=================================================== */
+
+.session-back-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+
+    padding: 11px 20px;
+
+    margin: 0 0 30px 0;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 12px;
+
+    background: #252b42;
+
+    color: #c4b5fd;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ===================================================
+   HOVER
+=================================================== */
+
+.session-back-btn:hover {
+
+    background: #4f46e5;
+
+    color: white;
+
+    border-color: #6366f1;
+
+    transform: translateX(-4px);
+
+    box-shadow:
+        0 8px 20px rgba(79, 70, 229, 0.3);
+}
+
+
+/* ===================================================
+   ACTIVE
+=================================================== */
+
+.session-back-btn:active {
+
+    transform: scale(0.97);
+
+}
+
+
+/* ===================================================
+   MAIN MANAGEMENT CARD
+=================================================== */
+
+.session-management-card {
+
+    max-width: 1100px;
+
+    margin: 0 auto 30px;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    background: #252b42;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ===================================================
+   CARD HEADING
+=================================================== */
+
+.session-management-card h2 {
+
+    color: #c4b5fd;
+
+    font-size: 25px;
+
+    margin: 0 0 8px;
+}
+
+
+/* ===================================================
+   SECTION DESCRIPTION
+=================================================== */
+
+.section-description {
+
+    color: #94a3b8;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin: 0 0 25px;
+}
+
+
+/* ===================================================
+   FORM GROUP
+=================================================== */
+
+.form-group {
+
+    margin-bottom: 22px;
+}
+
+
+.form-group label {
+
+    display: block;
+
+    color: #e2e8f0;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+/* ===================================================
+   INPUT / TEXTAREA / SELECT
+=================================================== */
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 12px;
+
+    background: #1e293b;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+
+    color: #64748b;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+
+    border-color: #6366f1;
+
+    box-shadow:
+        0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+
+.form-group textarea {
+
+    resize: vertical;
+
+    min-height: 120px;
+
+    line-height: 1.6;
+}
+
+
+.form-group select option {
+
+    background: #1e293b;
+
+    color: white;
+}
+
+
+/* ===================================================
+   TWO COLUMN FORM
+=================================================== */
+
+.form-row {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ===================================================
+   TIME SLOT ADD SECTION
+=================================================== */
+
+.slot-add-row {
+
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+.slot-add-row input {
+
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 14px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 12px;
+
+    background: #1e293b;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+    transition: 0.3s;
+}
+
+
+.slot-add-row input::placeholder {
+
+    color: #64748b;
+}
+
+
+.slot-add-row input:focus {
+
+    border-color: #6366f1;
+
+    box-shadow:
+        0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+
+/* ===================================================
+   ADD SLOT BUTTON
+=================================================== */
+
+.add-slot-btn {
+
+    padding: 13px 22px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition: all 0.3s ease;
+}
+
+
+.add-slot-btn:hover {
+
+    background: #3730a3;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(79, 70, 229, 0.3);
+}
+
+
+/* ===================================================
+   MENTOR SLOTS LIST
+=================================================== */
+
+.mentor-slots-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.mentor-slot-item {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 14px 17px;
+
+    background: #1e293b;
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 12px;
+
+    color: #e2e8f0;
+
+    font-size: 15px;
+}
+
+
+.mentor-slot-item span {
+
+    font-weight: 500;
+
+    color: #e2e8f0;
+}
+
+
+.mentor-slot-item button {
+
+    padding: 7px 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: rgba(239, 68, 68, 0.15);
+
+    color: #f87171;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.mentor-slot-item button:hover {
+
+    background: #ef4444;
+
+    color: white;
+}
+
+
+/* ===================================================
+   EMPTY MESSAGE
+=================================================== */
+
+.empty-message {
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin: 0;
+
+    background: #1e293b;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* ===================================================
+   PDF UPLOAD AREA
+=================================================== */
+
+.upload-area {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 170px;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    border: 2px dashed rgba(139, 92, 246, 0.45);
+
+    border-radius: 16px;
+
+    background: rgba(139, 92, 246, 0.06);
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.upload-area:hover {
+
+    background: rgba(139, 92, 246, 0.12);
+
+    border-color: #8b5cf6;
+
+    transform: translateY(-2px);
+}
+
+
+.upload-area span {
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+
+.upload-area strong {
+
+    color: #c4b5fd;
+
+    font-size: 17px;
+
+    margin-bottom: 5px;
+}
+
+
+.upload-area small {
+
+    color: #94a3b8;
+
+    font-size: 13px;
+}
+
+
+.upload-area input[type="file"] {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    opacity: 0;
+
+    cursor: pointer;
+}
+
+
+/* ===================================================
+   MATERIALS LIST
+=================================================== */
+
+.materials-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+
+.material-item {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 14px 17px;
+
+    background: #1e293b;
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 12px;
+
+    color: #e2e8f0;
+
+    font-size: 14px;
+}
+
+
+.material-item span {
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+.material-item button {
+
+    padding: 7px 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: rgba(239, 68, 68, 0.15);
+
+    color: #f87171;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    flex-shrink: 0;
+}
+
+
+.material-item button:hover {
+
+    background: #ef4444;
+
+    color: white;
+}
+
+
+/* ===================================================
+   GOOGLE MEET
+=================================================== */
+
+.session-management-card
+.form-group input[type="url"] {
+
+    color: #c4b5fd;
+}
+
+
+/* ===================================================
+   MESSAGE BOX
+=================================================== */
+
+.message-box {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.message-box textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 15px;
+
+    min-height: 120px;
+
+    resize: vertical;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 12px;
+
+    background: #1e293b;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+
+    outline: none;
+
+    line-height: 1.6;
+
+    transition: 0.3s;
+}
+
+
+.message-box textarea::placeholder {
+
+    color: #64748b;
+}
+
+
+.message-box textarea:focus {
+
+    border-color: #6366f1;
+
+    box-shadow:
+        0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+
+/* ===================================================
+   SEND MESSAGE BUTTON
+=================================================== */
+
+.send-message-btn {
+
+    align-self: flex-end;
+
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.send-message-btn:hover {
+
+    background: #3730a3;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(79, 70, 229, 0.3);
+}
+
+
+/* ===================================================
+   SAVE SECTION
+=================================================== */
+
+.save-session-section {
+
+    max-width: 1100px;
+
+    margin: 35px auto 0;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+/* ===================================================
+   SAVE BUTTON
+=================================================== */
+
+.save-session-btn {
+
+    padding: 15px 35px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5b4cf0,
+            #7c5cff
+        );
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 8px 22px rgba(79, 70, 229, 0.3);
+}
+
+
+.save-session-btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 28px rgba(79, 70, 229, 0.45);
+}
+
+
+.save-session-btn:active {
+
+    transform: scale(0.97);
+}
+
+
+/* ===================================================
+   RESPONSIVE - TABLET
+=================================================== */
+
+@media (max-width: 900px) {
+
+    .mentor-session-page {
+
+        padding:
+            110px 25px 60px;
+    }
+
+
+    .session-page-header h1 {
+
+        font-size: 36px;
+    }
+
+
+    .session-management-card {
+
+        padding: 25px;
+    }
+
+
+    .form-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+}
+
+
+/* ===================================================
+   RESPONSIVE - MOBILE
+=================================================== */
+
+@media (max-width: 650px) {
+
+    .mentor-session-page {
+
+        padding:
+            100px 18px 50px;
+    }
+
+
+    .session-page-header h1 {
+
+        font-size: 30px;
+    }
+
+
+    .session-page-header p {
+
+        font-size: 14px;
+    }
+
+
+    .session-management-card {
+
+        padding: 20px;
+
+        border-radius: 16px;
+    }
+
+
+    .session-management-card h2 {
+
+        font-size: 21px;
+    }
+
+
+    .slot-add-row {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .slot-add-row input {
+
+        width: 100%;
+    }
+
+
+    .add-slot-btn {
+
+        width: 100%;
+    }
+
+
+    .mentor-slot-item {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .mentor-slot-item button {
+
+        align-self: flex-end;
+    }
+
+
+    .material-item {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .material-item button {
+
+        align-self: flex-end;
+    }
+
+
+    .send-message-btn {
+
+        width: 100%;
+    }
+
+
+    .save-session-btn {
+
+        width: 100%;
+
+        padding:
+            14px 20px;
+    }
+
+}
+
+
+/* ===================================================
+   SMALL MOBILE
+=================================================== */
+
+@media (max-width: 400px) {
+
+    .session-page-header h1 {
+
+        font-size: 26px;
+    }
+
+
+    .session-management-card {
+
+        padding: 17px;
+    }
+
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+
+        font-size: 14px;
+
+        padding:
+            12px;
+    }
+
+}
+

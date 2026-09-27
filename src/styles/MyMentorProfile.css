@@ -1,0 +1,1409 @@
+
+/* =========================================
+   MY MENTOR PROFILE PAGE
+   EDUCONNECT DARK PURPLE THEME
+========================================= */
+
+.my-mentor-profile-page {
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+
+    background: #0f172a;
+    color: white;
+
+    padding-top: 120px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 70px;
+
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.profile-back-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 30px;
+
+    padding: 12px 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+
+    background: #252b42;
+    color: #cbd5e1;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.profile-back-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #5b4cf0,
+        #7c5cff
+    );
+
+    color: white;
+
+    transform: translateX(-3px);
+}
+
+
+/* =========================================
+   MAIN PROFILE CONTAINER
+========================================= */
+
+.my-mentor-profile-container {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    background: #252b42;
+
+    border-radius: 28px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.35);
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   PROFILE HEADER
+========================================= */
+
+.my-profile-header {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(91, 76, 240, 0.35),
+            rgba(124, 92, 255, 0.12)
+        );
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================
+   AVATAR
+========================================= */
+
+.my-profile-avatar {
+    width: 105px;
+    height: 105px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 52px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5b4cf0,
+            #7c5cff
+        );
+
+    box-shadow:
+        0 10px 25px
+        rgba(91, 76, 240, 0.35);
+}
+
+
+/* =========================================
+   HEADER INFO
+========================================= */
+
+.my-profile-header-info {
+    flex: 1;
+}
+
+.my-profile-header-info h1 {
+    margin: 0 0 10px;
+
+    font-size: 34px;
+
+    color: white;
+}
+
+.my-profile-header-info p {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 0;
+
+    color: #cbd5e1;
+
+    font-size: 16px;
+}
+
+.my-profile-header-info svg {
+    color: #a78bfa;
+}
+
+
+/* =========================================
+   RATING
+========================================= */
+
+.mentor-rating {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 90px;
+}
+
+.mentor-rating svg {
+    color: #facc15;
+
+    font-size: 24px;
+
+    margin-bottom: 5px;
+}
+
+.mentor-rating span {
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: #f59e0b;
+}
+
+.mentor-rating small {
+    color: #94a3b8;
+
+    margin-top: 3px;
+}
+
+
+/* =========================================
+   PROFILE CONTENT
+========================================= */
+
+.my-profile-content {
+    padding: 40px;
+
+    background: #252b42;
+}
+
+
+/* =========================================
+   PROFILE SECTION
+========================================= */
+
+.profile-section {
+    margin-bottom: 35px;
+
+    padding-bottom: 30px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.08);
+
+    background: transparent;
+}
+
+.profile-section:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.section-heading {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 0;
+
+    font-size: 23px;
+
+    color: white;
+}
+
+.section-heading h2 svg {
+    color: #a78bfa;
+}
+
+
+/* =========================================
+   EDIT BUTTON
+========================================= */
+
+.edit-profile-btn {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 10px 18px;
+
+    border: 1px solid #5b4cf0;
+
+    border-radius: 10px;
+
+    background: transparent;
+
+    color: #c4b5fd;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+    background: #5b4cf0;
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   PROFILE GRID
+========================================= */
+
+.profile-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   PROFILE FIELD
+========================================= */
+
+.profile-field {
+    background: #1e293b;
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.06);
+
+    border-radius: 15px;
+
+    padding: 20px;
+}
+
+.profile-field label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 12px;
+
+    color: #a78bfa;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.profile-field label svg {
+    font-size: 15px;
+}
+
+.profile-field p {
+    margin: 0;
+
+    color: #e2e8f0;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.profile-field input,
+.profile-section textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 15px;
+
+    border-radius: 10px;
+
+    border: 1px solid #475569;
+
+    background: #1e293b !important;
+
+    color: #f8fafc !important;
+
+    outline: none;
+
+    font-size: 15px;
+
+    font-family: inherit;
+
+    transition: all 0.3s ease;
+}
+
+.profile-field input:focus,
+.profile-section textarea:focus {
+    border-color: #7c5cff;
+
+    box-shadow:
+        0 0 10px
+        rgba(124, 92, 255, 0.2);
+}
+
+.profile-field input::placeholder,
+.profile-section textarea::placeholder {
+    color: #94a3b8 !important;
+
+    opacity: 1;
+}
+
+
+/* =========================================
+   ADD ITEM ROW
+   Skills / Achievements /
+   Resources / Slots
+========================================= */
+
+.add-item-row {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    width: 100%;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   ADD ITEM INPUT
+========================================= */
+
+.add-item-row input {
+    flex: 1;
+
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    padding: 13px 15px;
+
+    border-radius: 10px;
+
+    border: 1px solid #475569;
+
+    background: #1e293b !important;
+
+    color: #f8fafc !important;
+
+    outline: none;
+
+    font-size: 15px;
+
+    font-family: inherit;
+
+    transition: all 0.3s ease;
+}
+
+.add-item-row input:focus {
+    border-color: #7c5cff;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(124, 92, 255, 0.15);
+}
+
+.add-item-row input::placeholder {
+    color: #94a3b8 !important;
+
+    opacity: 1;
+}
+
+
+/* =========================================
+   ADD BUTTON
+========================================= */
+
+.add-item-row button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 13px 22px;
+
+    min-width: 90px;
+
+    border: 1px solid #7c5cff;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5b4cf0,
+            #7c5cff
+        ) !important;
+
+    color: #ffffff !important;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.add-item-row button:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #6d5dfc,
+            #8b6cff
+        ) !important;
+
+    color: #ffffff !important;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(91, 76, 240, 0.35);
+}
+
+.add-item-row button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   SKILL TAGS
+========================================= */
+
+.skill-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.skill-tags span {
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(124, 92, 255, 0.15);
+
+    border: 1px solid
+        rgba(124, 92, 255, 0.4);
+
+    color: #c4b5fd;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   EDITABLE TAGS
+========================================= */
+
+.editable-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.editable-tag {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 12px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(124, 92, 255, 0.15);
+
+    border: 1px solid
+        rgba(124, 92, 255, 0.4);
+
+    color: #ddd6fe;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   REMOVE SKILL BUTTON
+========================================= */
+
+.editable-tag button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    height: 22px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        rgba(239, 68, 68, 0.15);
+
+    color: #f87171;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.editable-tag button:hover {
+    background: #ef4444;
+
+    color: white;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   ABOUT ME / BIO
+========================================= */
+
+.profile-section .profile-bio {
+    padding: 20px;
+
+    margin: 0;
+
+    background: #1e293b;
+
+    border-radius: 15px;
+
+    color: #e2e8f0 !important;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    font-weight: 400;
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.06);
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.profile-section textarea {
+    width: 100%;
+
+    min-height: 140px;
+
+    box-sizing: border-box;
+
+    padding: 15px;
+
+    background: #1e293b !important;
+
+    color: #f8fafc !important;
+
+    border: 1px solid #475569;
+
+    border-radius: 12px;
+
+    resize: vertical;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    outline: none;
+}
+
+.profile-section textarea:focus {
+    border-color: #7c5cff;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(124, 92, 255, 0.15);
+}
+
+.profile-section textarea::placeholder {
+    color: #94a3b8 !important;
+
+    opacity: 1;
+}
+
+
+/* =========================================
+   EDITABLE LIST
+   Achievements / Resources
+========================================= */
+
+.editable-list {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 15px 0 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.editable-list li {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 14px 16px;
+
+    background: #1e293b !important;
+
+    border: 1px solid
+        rgba(124, 92, 255, 0.2);
+
+    border-radius: 12px;
+
+    color: #e2e8f0 !important;
+
+    font-size: 15px;
+
+    box-sizing: border-box;
+}
+
+.editable-list li button {
+    flex-shrink: 0;
+
+    width: 30px;
+
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid
+        rgba(239, 68, 68, 0.35);
+
+    border-radius: 8px;
+
+    background:
+        rgba(239, 68, 68, 0.12);
+
+    color: #f87171;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.editable-list li button:hover {
+    background: #ef4444;
+
+    color: white;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   NORMAL LISTS
+   Achievements / Resources VIEW MODE
+========================================= */
+
+.profile-section > ul {
+    margin: 0;
+
+    padding-left: 25px;
+
+    color: #e2e8f0 !important;
+}
+
+.profile-section > ul li {
+    margin-bottom: 10px;
+
+    color: #e2e8f0 !important;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   AVAILABLE SLOTS
+========================================= */
+
+.slot-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+
+/* =========================================
+   SESSION / SLOT CARD
+========================================= */
+
+.slot-card {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 16px 18px;
+
+    background: #1e293b !important;
+
+    border: 1px solid
+        rgba(124, 92, 255, 0.25);
+
+    border-radius: 12px;
+
+    color: #f1f5f9 !important;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    box-shadow:
+        0 5px 15px
+        rgba(0, 0, 0, 0.15);
+
+    transition: all 0.3s ease;
+}
+
+.slot-card:hover {
+    background: #202a40 !important;
+
+    border-color: #7c5cff;
+
+    transform: translateX(3px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(91, 76, 240, 0.15);
+}
+
+
+/* =========================================
+   REMOVE SLOT BUTTON
+========================================= */
+
+.slot-card button {
+    flex-shrink: 0;
+
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid
+        rgba(239, 68, 68, 0.35);
+
+    border-radius: 8px;
+
+    background:
+        rgba(239, 68, 68, 0.12) !important;
+
+    color: #f87171 !important;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.slot-card button:hover {
+    background: #ef4444 !important;
+
+    color: white !important;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   EMPTY SLOT MESSAGE
+========================================= */
+
+.slot-list > p {
+    margin: 0;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    background: #1e293b !important;
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.06);
+
+    color: #94a3b8 !important;
+}
+
+
+/* =========================================
+   ADD SESSION BUTTON
+   Kept for existing session UI
+========================================= */
+
+.add-session-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 13px 20px;
+
+    border: 1px solid #6d5dfc;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5b4cf0,
+            #7c5cff
+        ) !important;
+
+    color: white !important;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.add-session-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(91, 76, 240, 0.35);
+}
+
+.add-session-btn:disabled {
+    opacity: 0.45;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+
+/* =========================================
+   SESSION LIST
+========================================= */
+
+.mentor-session-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   SESSION CARD
+========================================= */
+
+.mentor-session-card {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 16px 18px;
+
+    background: #1e293b !important;
+
+    border: 1px solid
+        rgba(124, 92, 255, 0.25);
+
+    border-radius: 12px;
+
+    color: #e2e8f0 !important;
+
+    font-size: 15px;
+
+    transition: all 0.3s ease;
+}
+
+.mentor-session-card:hover {
+    border-color: #7c5cff;
+
+    background: #202a40 !important;
+
+    transform: translateX(3px);
+}
+
+
+/* =========================================
+   REMOVE SESSION BUTTON
+========================================= */
+
+.remove-session-btn {
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid
+        rgba(239, 68, 68, 0.35);
+
+    border-radius: 8px;
+
+    background:
+        rgba(239, 68, 68, 0.12) !important;
+
+    color: #f87171 !important;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: all 0.3s ease;
+}
+
+.remove-session-btn:hover {
+    background: #ef4444 !important;
+
+    color: white !important;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   PROFILE ACTIONS
+========================================= */
+
+.profile-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================
+   CANCEL BUTTON
+========================================= */
+
+.cancel-profile-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 13px 25px;
+
+    border-radius: 10px;
+
+    border: 1px solid #475569;
+
+    background: transparent;
+
+    color: #cbd5e1;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: all 0.3s ease;
+}
+
+.cancel-profile-btn:hover {
+    background: #334155;
+
+    color: white;
+}
+
+
+/* =========================================
+   SAVE BUTTON
+========================================= */
+
+.save-profile-btn {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 13px 25px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5b4cf0,
+            #7c5cff
+        ) !important;
+
+    color: white !important;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.save-profile-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(91, 76, 240, 0.4);
+}
+
+.save-profile-btn:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+
+/* =========================================
+   APPROVAL BANNER
+========================================= */
+
+.approval-banner {
+    max-width: 1100px;
+
+    margin: 0 auto 30px;
+
+    padding: 20px 25px;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #4f46e5,
+            #7c3aed
+        );
+
+    color: #ffffff !important;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.25);
+}
+
+.approval-banner h2 {
+    margin-top: 0;
+
+    color: #ffffff !important;
+
+    opacity: 1 !important;
+}
+
+.approval-banner p {
+    color: #ffffff !important;
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+}
+
+.approval-banner button {
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    background: #ffffff;
+
+    color: #5b21b6;
+
+    transition: all 0.3s ease;
+}
+
+.approval-banner button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px
+        rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .my-mentor-profile-page {
+        padding-left: 20px;
+
+        padding-right: 20px;
+
+        padding-top: 100px;
+    }
+
+    .my-profile-header {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 20px;
+    }
+
+    .my-profile-header-info p {
+        justify-content: center;
+    }
+
+    .my-profile-content {
+        padding: 25px 20px;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .edit-profile-btn {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+    }
+
+    .cancel-profile-btn,
+    .save-profile-btn {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .add-item-row {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .add-item-row input {
+        width: 100%;
+    }
+
+    .add-item-row button {
+        width: 100%;
+    }
+
+    .slot-card {
+        padding: 14px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .my-mentor-profile-page {
+        padding-left: 12px;
+
+        padding-right: 12px;
+    }
+
+    .my-profile-content {
+        padding: 20px 15px;
+    }
+
+    .my-profile-header {
+        padding: 25px 15px;
+    }
+
+    .my-profile-avatar {
+        width: 85px;
+
+        height: 85px;
+
+        font-size: 40px;
+    }
+
+    .my-profile-header-info h1 {
+        font-size: 27px;
+    }
+
+    .section-heading h2 {
+        font-size: 20px;
+    }
+
+    .profile-field {
+        padding: 16px;
+    }
+}
+

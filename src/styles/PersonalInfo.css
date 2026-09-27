@@ -1,0 +1,153 @@
+.personal-info {
+    width: 100%;
+}
+
+.personal-info h2 {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.section-text {
+    color: #94a3b8;
+    margin-bottom: 35px;
+}
+
+/* ================= PHOTO UPLOAD ================= */
+
+.photo-upload {
+    margin-bottom: 35px;
+}
+
+.photo-upload .field-label {
+    display: block;
+    margin-bottom: 12px;
+    color: #e2e8f0;
+    font-weight: 600;
+}
+
+.upload-box {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+
+    border: 2px dashed #8b5cf6;
+    border-radius: 14px;
+    background: #0f172a;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    overflow: hidden;
+}
+
+.upload-box:hover {
+    border-color: #a78bfa;
+    background: #111c33;
+}
+
+.upload-icon {
+    font-size: 26px;
+    color: #8b5cf6;
+}
+
+.upload-text p {
+    margin: 0;
+    color: #fff;
+    font-weight: 500;
+}
+
+.upload-text span {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+.upload-box input[type="file"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* ================= INPUT GROUP ================= */
+
+.input-group {
+    margin-bottom: 28px;
+}
+
+.field-label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ================= INPUT BOX (FIXED) ================= */
+
+.input-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    background: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+
+    height: 52px;
+    padding: 0 14px;
+
+    box-sizing: border-box;
+    overflow: hidden;   /* 🔥 KEY FIX */
+
+    transition: 0.3s;
+}
+
+/* focus effect */
+.input-box:focus-within {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+}
+
+/* icon */
+.input-box svg {
+    color: #8b5cf6;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+/* input field */
+.input-box input {
+    flex: 1;
+    height: 100%;
+
+    border: none !important;
+    outline: none !important;
+
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    box-shadow: none !important;
+}
+
+/* placeholder */
+.input-box input::placeholder {
+    color: #64748b;
+}
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

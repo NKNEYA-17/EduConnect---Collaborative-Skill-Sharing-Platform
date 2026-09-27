@@ -1,0 +1,50 @@
+.review-page {
+    padding: 40px;
+    color: white;
+}
+
+.review-title {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.review-subtitle {
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.review-card {
+    background: #111827;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #1f2937;
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: #2563eb;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #22c55e;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #16a34a;
+}

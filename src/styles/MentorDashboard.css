@@ -1,0 +1,304 @@
+/* ===============================
+   MENTOR DASHBOARD MAIN
+================================ */
+
+.mentor-dashboard {
+
+    min-height: 100vh;
+
+    background: #0f172a !important;
+
+    color: white;
+
+    padding-top: 120px;
+
+    padding-left: 60px;
+
+    padding-right: 60px;
+
+    padding-bottom: 60px;
+
+}
+
+
+
+/* ===============================
+   HEADER
+================================ */
+
+
+.dashboard-header {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+}
+
+
+.dashboard-header h1 {
+
+    color: white !important;
+
+    font-size: 42px;
+
+}
+
+
+.dashboard-header p {
+
+    color: #cbd5e1 !important;
+
+    font-size:20px;
+
+}
+
+
+
+/* ===============================
+   CARDS GRID
+================================ */
+
+
+.mentor-cards {
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+    gap:35px;
+
+
+    max-width:1100px;
+
+
+    margin:auto;
+
+
+}
+
+
+
+/* ===============================
+   CARD DESIGN
+================================ */
+
+
+.mentor-card {
+
+
+    background:#252B42 !important;
+
+
+    padding:40px;
+
+
+    border-radius:25px;
+
+
+    border:1px solid rgba(255,255,255,0.1);
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,0.35);
+
+
+    text-align:center;
+
+
+    transition:0.3s ease;
+
+
+}
+
+
+
+.mentor-card:hover {
+
+
+    transform:translateY(-8px);
+
+
+    box-shadow:
+
+    0 20px 45px rgba(124,92,255,0.35);
+
+
+}
+
+
+
+/* ===============================
+   CARD TEXT
+================================ */
+
+
+.mentor-card h2 {
+
+
+    color:white !important;
+
+
+    font-size:28px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.mentor-card p {
+
+
+    color:#cbd5e1 !important;
+
+
+    font-size:17px;
+
+
+    line-height:1.6;
+
+
+}
+
+
+
+/* ===============================
+   BUTTON
+================================ */
+
+
+.mentor-card button {
+
+
+    margin-top:25px;
+
+
+    padding:12px 28px;
+
+
+    border:none;
+
+
+    border-radius:12px;
+
+
+    background:
+
+    linear-gradient(135deg,#5b4cf0,#7c5cff) !important;
+
+
+    color:white !important;
+
+
+    font-weight:600;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+.mentor-card button:hover {
+
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+
+@media(max-width:768px){
+
+
+    .mentor-dashboard{
+
+
+        padding-left:20px;
+
+        padding-right:20px;
+
+    }
+
+
+
+    .mentor-cards{
+
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
+
+/* =========================================
+   APPROVAL BANNER
+========================================= */
+
+.approval-banner {
+    max-width: 1100px;
+    margin: 0 auto 30px;
+    padding: 20px 25px;
+    border-radius: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #4f46e5,
+        #7c3aed
+    );
+
+    color: #ffffff !important;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.approval-banner h2 {
+    margin-top: 0;
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+.approval-banner p {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.approval-banner button {
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    background: #ffffff;
+    color: #5b21b6;
+
+    transition: all 0.3s ease;
+}
+
+.approval-banner button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.25);
+}

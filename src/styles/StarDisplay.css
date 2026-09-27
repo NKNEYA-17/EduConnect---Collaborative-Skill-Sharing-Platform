@@ -1,0 +1,876 @@
+
+/* =========================================================
+   STAR DISPLAY WRAPPER
+   ========================================================= */
+
+.star-display-wrapper {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   NAVBAR STAR BUTTON
+   ========================================================= */
+
+.star-display {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 6px 12px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.star-display:hover {
+
+    background:
+        rgba(139, 92, 246, 0.15);
+}
+
+
+.star-display:active {
+
+    transform: scale(0.96);
+}
+
+
+/* =========================================================
+   STAR ICON
+   ========================================================= */
+
+.star-icon {
+
+    font-size: 20px;
+
+    line-height: 1;
+}
+
+
+.star-count {
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   STAR DROPDOWN
+   ========================================================= */
+
+.star-dropdown {
+
+    position: absolute;
+
+    top: calc(100% + 12px);
+
+    right: 0;
+
+    width: 350px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #211631,
+            #160e24
+        );
+
+    border:
+        1px solid
+        rgba(139, 92, 246, 0.35);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0, 0, 0, 0.45),
+
+        0 0 25px
+        rgba(124, 58, 237, 0.12);
+
+    overflow: hidden;
+
+    z-index: 9999;
+
+    animation:
+        starDropdownOpen
+        0.18s
+        ease-out;
+}
+
+
+/* =========================================================
+   DROPDOWN ANIMATION
+   ========================================================= */
+
+@keyframes starDropdownOpen {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(-6px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* =========================================================
+   DROPDOWN HEADER
+   ========================================================= */
+
+.star-dropdown-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 18px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(124, 58, 237, 0.20),
+            rgba(168, 85, 247, 0.08)
+        );
+}
+
+
+.star-dropdown-header h3 {
+
+    margin:
+        0 0 4px;
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    font-weight: 700;
+}
+
+
+.star-dropdown-header span {
+
+    color: #aaa0bb;
+
+    font-size: 12px;
+}
+
+
+.star-dropdown-header strong {
+
+    color: #f5d76e;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   STAR LEVEL SECTION
+   ========================================================= */
+
+.star-level-section {
+
+    padding: 16px 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(124, 58, 237, 0.12),
+            rgba(168, 85, 247, 0.05)
+        );
+
+    border-bottom:
+        1px solid
+        rgba(139, 92, 246, 0.15);
+}
+
+
+/* =========================================================
+   STAR LEVEL HEADER
+   ========================================================= */
+
+.star-level-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.star-level-rank {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+
+/* =========================================================
+   LEVEL EMOJI
+   ========================================================= */
+
+.star-level-emoji {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background:
+        rgba(124, 58, 237, 0.18);
+
+    border:
+        1px solid
+        rgba(139, 92, 246, 0.30);
+
+    border-radius: 12px;
+
+    font-size: 22px;
+
+    box-shadow:
+        0 0 15px
+        rgba(124, 58, 237, 0.12);
+}
+
+
+/* =========================================================
+   LEVEL LABEL
+   ========================================================= */
+
+.star-level-label {
+
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #9f96ad;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   LEVEL NAME
+   ========================================================= */
+
+.star-level-name {
+
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   PROGRESS CONTAINER
+   ========================================================= */
+
+.star-progress-container {
+
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+   PROGRESS INFORMATION
+   ========================================================= */
+
+.star-progress-info {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 7px;
+
+    color: #aaa0bb;
+
+    font-size: 11px;
+
+    font-weight: 500;
+}
+
+
+.star-progress-info span:last-child {
+
+    color: #c4b5fd;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   PROGRESS BAR
+   ========================================================= */
+
+.star-progress-bar {
+
+    width: 100%;
+
+    height: 7px;
+
+    background:
+        rgba(255, 255, 255, 0.08);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        inset 0 1px 2px
+        rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   PROGRESS FILL
+   ========================================================= */
+
+.star-progress-fill {
+
+    height: 100%;
+
+    min-width: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #7c3aed,
+            #a855f7,
+            #c084fc
+        );
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 0 10px
+        rgba(168, 85, 247, 0.45);
+
+    transition:
+        width 0.5s ease;
+}
+
+
+/* =========================================================
+   NEXT LEVEL
+   ========================================================= */
+
+.star-next-level {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-top: 11px;
+
+    color: #aaa0bb;
+
+    font-size: 11px;
+
+    text-align: center;
+}
+
+
+.star-next-level strong {
+
+    margin-left: 3px;
+
+    color: #c4b5fd;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   MAXIMUM LEVEL
+   ========================================================= */
+
+.star-max-level {
+
+    color: #f5d76e;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   DIVIDER
+   ========================================================= */
+
+.star-dropdown-divider {
+
+    height: 1px;
+
+    background:
+        rgba(139, 92, 246, 0.18);
+}
+
+
+/* =========================================================
+   DROPDOWN CONTENT
+   ========================================================= */
+
+.star-dropdown-content {
+
+    max-height: 310px;
+
+    overflow-y: auto;
+}
+
+
+/* =========================================================
+   CUSTOM SCROLLBAR
+   ========================================================= */
+
+.star-dropdown-content::-webkit-scrollbar {
+
+    width: 5px;
+}
+
+
+.star-dropdown-content::-webkit-scrollbar-track {
+
+    background: transparent;
+}
+
+
+.star-dropdown-content::-webkit-scrollbar-thumb {
+
+    background:
+        rgba(139, 92, 246, 0.45);
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   DROPDOWN TRANSACTION
+   ========================================================= */
+
+.star-dropdown-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px 18px;
+
+    border-bottom:
+        1px solid
+        rgba(139, 92, 246, 0.10);
+
+    transition:
+        background 0.2s ease;
+}
+
+
+.star-dropdown-item:hover {
+
+    background:
+        rgba(124, 58, 237, 0.10);
+}
+
+
+.star-dropdown-item:last-child {
+
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   TRANSACTION ICON
+   ========================================================= */
+
+.dropdown-transaction-icon {
+
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background:
+        rgba(124, 58, 237, 0.15);
+
+    border:
+        1px solid
+        rgba(139, 92, 246, 0.20);
+
+    border-radius: 10px;
+
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   TRANSACTION DETAILS
+   ========================================================= */
+
+.dropdown-transaction-details {
+
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.dropdown-transaction-details strong {
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.dropdown-transaction-details span {
+
+    color: #a9a0b9;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   TRANSACTION STAR AMOUNT
+   ========================================================= */
+
+.dropdown-transaction-stars {
+
+    color: #f5d76e;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.star-dropdown-empty {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px 20px;
+
+    text-align: center;
+}
+
+
+.star-dropdown-empty span {
+
+    margin-bottom: 8px;
+
+    font-size: 30px;
+}
+
+
+.star-dropdown-empty p {
+
+    margin: 0;
+
+    color: #a9a0b9;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   VIEW ALL BUTTON
+   ========================================================= */
+
+.view-star-history-button {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 14px 18px;
+
+    border: none;
+
+    border-top:
+        1px solid
+        rgba(139, 92, 246, 0.18);
+
+    background:
+        rgba(124, 58, 237, 0.10);
+
+    color: #c4b5fd;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.view-star-history-button:hover {
+
+    background:
+        rgba(124, 58, 237, 0.22);
+
+    color: #ffffff;
+}
+
+
+.view-star-history-button span {
+
+    font-size: 16px;
+
+    transition:
+        transform 0.2s ease;
+}
+
+
+.view-star-history-button:hover span {
+
+    transform:
+        translateX(3px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .star-dropdown {
+
+        width: 320px;
+
+        right: -40px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .star-dropdown {
+
+        width:
+            calc(100vw - 30px);
+
+        right: -75px;
+
+        border-radius: 14px;
+    }
+
+
+    .star-dropdown-header {
+
+        padding: 16px;
+    }
+
+
+    .star-dropdown-item {
+
+        padding: 13px 15px;
+    }
+
+
+    .dropdown-transaction-icon {
+
+        width: 35px;
+
+        height: 35px;
+
+        font-size: 16px;
+    }
+
+
+    .dropdown-transaction-details strong {
+
+        font-size: 12px;
+    }
+
+
+    .dropdown-transaction-details span {
+
+        font-size: 10px;
+    }
+
+
+    .dropdown-transaction-stars {
+
+        font-size: 12px;
+    }
+
+
+    /* =============================================
+       MOBILE STAR LEVEL
+       ============================================= */
+
+    .star-level-section {
+
+        padding: 14px 15px;
+    }
+
+
+    .star-level-emoji {
+
+        width: 38px;
+
+        height: 38px;
+
+        font-size: 20px;
+    }
+
+
+    .star-level-name {
+
+        font-size: 14px;
+    }
+
+
+    .star-level-label {
+
+        font-size: 9px;
+    }
+
+
+    .star-progress-container {
+
+        margin-top: 13px;
+    }
+
+
+    .star-next-level {
+
+        font-size: 10px;
+    }
+}
+

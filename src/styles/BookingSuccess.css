@@ -1,0 +1,248 @@
+/* =========================================
+   BOOKING SUCCESS PAGE
+   EDUCONNECT DARK PURPLE THEME
+========================================= */
+
+.success-page {
+    min-height: 100vh;
+
+    background: #0f172a;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 40px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   SUCCESS CARD
+========================================= */
+
+.success-card {
+    background: #252b42;
+
+    width: 550px;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.35);
+
+    color: white;
+}
+
+
+/* =========================================
+   SUCCESS ICON
+========================================= */
+
+.success-icon {
+    font-size: 70px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   SUCCESS HEADING
+========================================= */
+
+.success-card h1 {
+    color: #c4b5fd;
+
+    margin-bottom: 10px;
+
+    font-size: 32px;
+}
+
+
+/* =========================================
+   SUCCESS DESCRIPTION
+========================================= */
+
+.success-card p {
+    color: #cbd5e1;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   BOOKING DETAILS
+========================================= */
+
+.booking-details {
+    margin: 30px 0;
+
+    text-align: left;
+
+    background: #1e293b;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+
+/* =========================================
+   BOOKING DETAIL TEXT
+========================================= */
+
+.booking-details p {
+    margin: 12px 0;
+
+    font-size: 16px;
+
+    color: #e2e8f0;
+}
+
+
+/* =========================================
+   STRONG TEXT INSIDE DETAILS
+========================================= */
+
+.booking-details strong {
+    color: #c4b5fd;
+}
+
+
+/* =========================================
+   BUTTON CONTAINER
+========================================= */
+
+.success-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+
+/* =========================================
+   COMMON BUTTON
+========================================= */
+
+.primary-btn,
+.secondary-btn {
+    padding: 12px 22px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+
+/* =========================================
+   PRIMARY BUTTON
+========================================= */
+
+.primary-btn {
+    border: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5b4cf0,
+            #7c5cff
+        );
+
+    color: white;
+
+    box-shadow:
+        0 5px 15px
+        rgba(91, 76, 240, 0.25);
+}
+
+
+.primary-btn:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #4f46e5,
+            #6d4df5
+        );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(91, 76, 240, 0.4);
+}
+
+
+/* =========================================
+   SECONDARY BUTTON
+========================================= */
+
+.secondary-btn {
+    border: 1px solid #475569;
+
+    background: #1e293b;
+
+    color: #cbd5e1;
+}
+
+
+.secondary-btn:hover {
+    background: #334155;
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .success-page {
+        padding: 25px 20px;
+    }
+
+    .success-card {
+        width: 100%;
+
+        padding: 30px 20px;
+
+        box-sizing: border-box;
+    }
+
+    .success-card h1 {
+        font-size: 28px;
+    }
+
+    .success-buttons {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+}

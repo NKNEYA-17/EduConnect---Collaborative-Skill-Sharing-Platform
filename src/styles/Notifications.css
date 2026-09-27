@@ -1,0 +1,653 @@
+
+/* =========================================
+   NOTIFICATIONS PAGE
+   EDUCONNECT DARK PURPLE THEME
+========================================= */
+
+.notifications-page {
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 120px 60px 60px;
+
+    background: #0f172a;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.notifications-header {
+    max-width: 1100px;
+
+    margin: 0 auto 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.notifications-header h1 {
+    margin: 0 0 8px;
+
+    color: white;
+
+    font-size: 40px;
+
+    font-weight: 700;
+}
+
+
+.notifications-header p {
+    margin: 0;
+
+    color: #cbd5e1;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   MARK ALL AS READ BUTTON
+========================================= */
+
+.mark-all-read-btn {
+    padding: 11px 18px;
+
+    border: 1px solid
+        rgba(196, 181, 253, 0.35);
+
+    border-radius: 10px;
+
+    background: rgba(139, 92, 246, 0.12);
+
+    color: #c4b5fd;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
+}
+
+
+.mark-all-read-btn:hover {
+    background: #6366f1;
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   NOTIFICATIONS LIST
+========================================= */
+
+.notifications-list {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/* =========================================
+   NOTIFICATION CARD
+========================================= */
+
+.notification-card {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    padding: 22px 24px;
+
+    background: #252b42;
+
+    border-radius: 18px;
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 12px 30px
+        rgba(0, 0, 0, 0.30);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.notification-card:hover {
+    transform: translateY(-3px);
+
+    border-color:
+        rgba(139, 92, 246, 0.45);
+
+    box-shadow:
+        0 16px 35px
+        rgba(0, 0, 0, 0.40);
+}
+
+
+/* =========================================
+   UNREAD NOTIFICATION
+========================================= */
+
+.notification-unread {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(99, 102, 241, 0.16),
+            #252b42
+        );
+
+    border-left: 4px solid #6366f1;
+}
+
+
+/* =========================================
+   READ NOTIFICATION
+========================================= */
+
+.notification-read {
+    opacity: 0.78;
+}
+
+
+/* =========================================
+   NOTIFICATION ICON
+========================================= */
+
+.notification-icon {
+    width: 52px;
+
+    height: 52px;
+
+    min-width: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(99, 102, 241, 0.15);
+
+    border: 1px solid
+        rgba(139, 92, 246, 0.25);
+
+    font-size: 25px;
+}
+
+
+/* =========================================
+   NOTIFICATION CONTENT
+========================================= */
+
+.notification-content {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+/* =========================================
+   TITLE ROW
+========================================= */
+
+.notification-title-row {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 7px;
+}
+
+
+.notification-title-row h2 {
+    margin: 0;
+
+    color: #c4b5fd;
+
+    font-size: 19px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   UNREAD DOT
+========================================= */
+
+.unread-dot {
+    width: 9px;
+
+    height: 9px;
+
+    min-width: 9px;
+
+    border-radius: 50%;
+
+    background: #818cf8;
+
+    box-shadow:
+        0 0 10px
+        rgba(129, 140, 248, 0.75);
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.notification-message {
+    margin: 0 0 12px;
+
+    color: #e2e8f0;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    word-break: break-word;
+}
+
+
+/* =========================================
+   BOOKING INFORMATION
+========================================= */
+
+.notification-booking-info {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+
+.notification-booking-info span {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 6px 10px;
+
+    border-radius: 8px;
+
+    background: #1e293b;
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.06);
+
+    color: #cbd5e1;
+
+    font-size: 12px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   DATE
+========================================= */
+
+.notification-date {
+    display: block;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+.notification-arrow {
+    align-self: center;
+
+    color: #818cf8;
+
+    font-size: 25px;
+
+    font-weight: 600;
+
+    transition:
+        transform 0.25s ease;
+}
+
+
+.notification-card:hover
+.notification-arrow {
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.notifications-empty {
+    max-width: 700px;
+
+    margin: 60px auto;
+
+    padding: 55px 30px;
+
+    text-align: center;
+
+    background: #252b42;
+
+    border-radius: 20px;
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 15px 35px
+        rgba(0, 0, 0, 0.35);
+}
+
+
+.empty-notification-icon {
+    font-size: 55px;
+
+    margin-bottom: 15px;
+}
+
+
+.notifications-empty h2 {
+    margin: 0 0 10px;
+
+    color: #c4b5fd;
+
+    font-size: 26px;
+}
+
+
+.notifications-empty p {
+    margin: 0;
+
+    color: #94a3b8;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   ERROR MESSAGE
+========================================= */
+
+.notifications-error {
+    max-width: 900px;
+
+    margin: 0 auto 25px;
+
+    padding: 17px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    background:
+        rgba(239, 68, 68, 0.12);
+
+    border: 1px solid
+        rgba(248, 113, 113, 0.25);
+
+    border-radius: 12px;
+
+    color: #fca5a5;
+
+    font-size: 14px;
+}
+
+
+.notifications-error button {
+    padding: 8px 15px;
+
+    border: 1px solid
+        rgba(248, 113, 113, 0.3);
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #fca5a5;
+
+    font-family: "Poppins", sans-serif;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease;
+}
+
+
+.notifications-error button:hover {
+    background:
+        rgba(239, 68, 68, 0.2);
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.notifications-loading {
+    min-height: 450px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #cbd5e1;
+
+    font-size: 17px;
+}
+
+
+.notification-spinner {
+    margin-bottom: 15px;
+
+    font-size: 42px;
+
+    animation:
+        notification-pulse 1.2s infinite ease-in-out;
+}
+
+
+@keyframes notification-pulse {
+
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: scale(1.12);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .notifications-page {
+        padding: 105px 25px 40px;
+    }
+
+
+    .notifications-header h1 {
+        font-size: 34px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .notifications-page {
+        padding: 100px 18px 30px;
+    }
+
+
+    .notifications-header {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        text-align: center;
+
+        margin-bottom: 30px;
+    }
+
+
+    .notifications-header h1 {
+        font-size: 28px;
+    }
+
+
+    .notifications-header p {
+        font-size: 14px;
+    }
+
+
+    .mark-all-read-btn {
+        width: 100%;
+    }
+
+
+    .notification-card {
+        padding: 18px;
+
+        gap: 12px;
+    }
+
+
+    .notification-icon {
+        width: 44px;
+
+        height: 44px;
+
+        min-width: 44px;
+
+        border-radius: 12px;
+
+        font-size: 21px;
+    }
+
+
+    .notification-title-row h2 {
+        font-size: 17px;
+    }
+
+
+    .notification-message {
+        font-size: 14px;
+    }
+
+
+    .notification-booking-info {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .notification-arrow {
+        display: none;
+    }
+
+
+    .notifications-empty {
+        margin: 40px auto;
+
+        padding: 40px 20px;
+    }
+
+
+    .notifications-error {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        text-align: center;
+    }
+
+
+    .notifications-error button {
+        width: 100%;
+    }
+
+}
+

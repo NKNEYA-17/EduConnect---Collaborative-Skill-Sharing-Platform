@@ -1,0 +1,215 @@
+.dashboard {
+
+  min-height:100vh;
+
+  padding:100px 40px 40px;
+
+  background:linear-gradient(
+    135deg,
+    #0f172a,
+    #1e1b4b,
+    #312e81
+  );
+
+}
+
+
+
+.dashboard-header {
+
+  text-align:center;
+
+  margin-bottom:40px;
+
+}
+
+
+
+.dashboard-header h1 {
+
+  color:#ddd6fe;
+
+  font-size:36px;
+
+}
+
+
+
+.dashboard-header p {
+
+  color:#e2e8f0;
+
+  font-size:16px;
+
+}
+
+
+
+/* Stats */
+
+.stats-container {
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(220px,1fr));
+
+  gap:25px;
+
+  margin-bottom:45px;
+
+}
+
+
+
+.stat-card {
+
+  background:rgba(255,255,255,0.08);
+
+  padding:30px;
+
+  border-radius:20px;
+
+  text-align:center;
+
+  border:1px solid rgba(255,255,255,0.15);
+
+  box-shadow:
+  0 10px 30px rgba(124,58,237,0.25);
+
+  transition:0.3s ease;
+
+}
+
+
+
+.stat-card:hover {
+
+  transform:translateY(-5px);
+
+}
+
+
+
+.stat-card h2 {
+
+  font-size:32px;
+
+  color:#ddd6fe;
+
+}
+
+
+
+.stat-card p {
+
+  color:#e2e8f0;
+
+}
+
+
+
+/* Sections */
+
+.section {
+
+  margin-bottom:40px;
+
+}
+
+
+
+.section h2 {
+
+  color:#c4b5fd;
+
+  margin-bottom:20px;
+
+}
+
+
+
+/* Recent bookings */
+
+.booking-preview {
+
+  display:grid;
+
+  gap:18px;
+
+}
+
+
+
+.preview-card {
+
+  background:rgba(255,255,255,0.08);
+
+  padding:20px;
+
+  border-radius:16px;
+
+  border:1px solid rgba(255,255,255,0.15);
+
+  box-shadow:
+  0 8px 20px rgba(124,58,237,0.25);
+
+}
+
+
+
+.preview-card h3 {
+
+  color:#ddd6fe;
+
+}
+
+
+
+.preview-card p {
+
+  color:#e2e8f0;
+
+}
+
+
+
+/* Mentor tags */
+
+.mentor-tags {
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:12px;
+
+}
+
+
+
+.tag {
+
+  background:linear-gradient(
+    135deg,
+    #7c3aed,
+    #a855f7
+  );
+
+  color:white;
+
+  padding:10px 18px;
+
+  border-radius:25px;
+
+  font-size:14px;
+
+}
+
+
+
+.empty-text {
+
+  color:#cbd5e1;
+
+}

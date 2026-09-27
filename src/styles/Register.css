@@ -1,0 +1,432 @@
+/* ==========================================
+   REGISTER PAGE
+========================================== */
+
+.register-page {
+    min-height: 100vh;
+    background: #0f172a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ==========================================
+   LEFT SIDE
+========================================== */
+
+.register-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-brand {
+    text-align: left;
+}
+
+.register-brand h1 {
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+
+.register-brand h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.register-brand p {
+    font-size: 24px;
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+/* ==========================================
+   RIGHT SIDE
+========================================== */
+
+.register-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-card {
+
+    width: 500px;
+
+    background: #252B42;
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.35);
+
+    border: 1px solid rgba(255,255,255,.08);
+}
+
+.register-title {
+
+    text-align: center;
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
+}
+
+.register-subtitle {
+
+    text-align: center;
+
+    color: #cbd5e1;
+
+    margin-bottom: 30px;
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+.register-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+/* ==========================================
+   INPUT GROUP
+========================================== */
+
+.register-input-group {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    height: 58px;
+
+    padding: 0 18px;
+
+    background: transparent;
+
+    border: 2px solid #334155;
+
+    border-radius: 14px;
+
+    transition: all .3s ease;
+}
+
+.register-input-group:focus-within {
+
+    border-color: #7c5cff;
+
+    box-shadow: 0 0 12px rgba(124,92,255,.25);
+}
+
+.register-icon {
+
+    color: #94a3b8;
+
+    font-size: 18px;
+
+    flex-shrink: 0;
+}
+
+.register-input-group input,
+.register-input-group select {
+
+    flex: 1;
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none !important;
+
+    outline: none !important;
+
+    background: transparent !important;
+
+    box-shadow: none !important;
+
+    color: white;
+
+    font-size: 16px;
+
+    padding: 0;
+
+    appearance: none;
+
+    -webkit-appearance: none;
+
+    -moz-appearance: none;
+}
+
+.register-input-group input::placeholder {
+
+    color: #94a3b8;
+}
+
+.register-input-group select {
+
+    cursor: pointer;
+}
+
+.register-input-group option {
+
+    background: #252B42;
+
+    color: white;
+}
+
+.register-eye-btn {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: transparent;
+
+    border: none;
+
+    color: #94a3b8;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    padding: 0;
+
+    transition: .3s;
+}
+
+.register-eye-btn:hover {
+
+    color: white;
+}
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.register-btn-main {
+
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    background: linear-gradient(135deg,#5b4cf0,#7c5cff);
+
+    transition: all .3s ease;
+}
+
+.register-btn-main:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 12px 30px rgba(91,76,240,.45);
+}
+
+.register-login-btn {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    background: transparent;
+
+    border: 2px solid #5b4cf0;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    transition: all .3s ease;
+}
+
+.register-login-btn:hover {
+
+    background: #5b4cf0;
+
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   DIVIDER
+========================================== */
+
+.register-divider {
+
+    display: flex;
+
+    align-items: center;
+
+    margin: 30px 0 20px;
+}
+
+.register-divider::before,
+.register-divider::after {
+
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: rgba(255,255,255,.15);
+}
+
+.register-divider span {
+
+    margin: 0 15px;
+
+    color: #94a3b8;
+
+    font-size: 15px;
+}
+
+/* ==========================================
+   REMOVE DEFAULT INPUT STYLES
+========================================== */
+
+.register-input-group input,
+.register-input-group input:focus,
+.register-input-group input:active,
+.register-input-group select,
+.register-input-group select:focus {
+
+    border: none !important;
+
+    outline: none !important;
+
+    box-shadow: none !important;
+
+    background: transparent !important;
+
+    appearance: none;
+
+    -webkit-appearance: none;
+
+    -moz-appearance: none;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+
+    .register-page {
+
+        flex-direction: column;
+
+        gap: 40px;
+
+        padding: 30px 20px;
+
+        text-align: center;
+    }
+
+    .register-left {
+
+        justify-content: center;
+
+        padding: 10px;
+    }
+
+    .register-brand {
+
+        text-align: center;
+    }
+
+    .register-brand h1 {
+
+        font-size: 42px;
+    }
+
+    .register-brand h2 {
+
+        font-size: 30px;
+    }
+
+    .register-brand p {
+
+        font-size: 18px;
+    }
+
+    .register-card {
+
+        width: 100%;
+
+        max-width: 500px;
+
+        padding: 35px 25px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .register-page {
+
+        padding: 20px 15px;
+    }
+
+    .register-card {
+
+        padding: 25px 18px;
+    }
+
+    .register-title {
+
+        font-size: 30px;
+    }
+
+    .register-subtitle {
+
+        font-size: 15px;
+    }
+
+    .register-btn-main {
+
+        font-size: 16px;
+    }
+
+    .register-login-btn {
+
+        font-size: 15px;
+    }
+
+}

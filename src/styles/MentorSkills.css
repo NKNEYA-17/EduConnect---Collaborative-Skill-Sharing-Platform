@@ -1,0 +1,32 @@
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* DEFAULT BUTTON (OLD STYLE RESTORED) */
+.skill-btn {
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 2px solid #4a90e2;
+  background: transparent;
+  color: #4a90e2;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+/* HOVER EFFECT */
+.skill-btn:hover {
+  background: #4a90e2;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* SELECTED STATE */
+.skill-btn.active {
+  background: #4a90e2;
+  color: white;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}

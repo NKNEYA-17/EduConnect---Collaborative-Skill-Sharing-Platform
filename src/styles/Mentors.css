@@ -1,0 +1,622 @@
+/* ============================
+   Mentors Page
+============================ */
+
+.mentors-page {
+
+    min-height: 100vh;
+
+    padding: 110px 40px 40px;
+
+    /* Dark homepage-style background */
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(108, 99, 255, 0.18),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            rgba(139, 92, 246, 0.15),
+            transparent 35%
+        ),
+        #0f1021;
+
+    font-family: "Segoe UI", sans-serif;
+
+    box-sizing: border-box;
+}
+
+
+/* ============================
+   Header Section
+============================ */
+
+.mentors-header {
+
+  text-align: center;
+
+  margin-bottom: 40px;
+
+}
+
+
+.mentors-header h1 {
+
+  font-size: 40px;
+
+  color: #ffffff;
+
+  margin-bottom: 12px;
+
+  font-weight: 700;
+
+}
+
+
+.mentors-header p {
+
+  color: #dbe6f3;
+
+  font-size: 17px;
+
+  max-width: 700px;
+
+  margin: auto;
+
+  line-height: 1.7;
+
+}
+
+
+
+/* ============================
+   Featured Mentor
+============================ */
+
+
+.featured-mentor {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  background: #ffffff;
+
+  padding: 30px;
+
+  border-radius: 18px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.18);
+
+  margin-bottom: 35px;
+
+  border-left: 6px solid #7b61ff;
+
+}
+
+
+
+.featured-avatar {
+
+  width:95px;
+
+  height:95px;
+
+  border-radius:50%;
+
+  background:linear-gradient(135deg,#6c63ff,#8d73ff);
+
+  color:white;
+
+  font-size:30px;
+
+  font-weight:bold;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  flex-shrink:0;
+
+}
+
+
+
+.featured-content {
+
+  flex:1;
+
+}
+
+
+
+.featured-content h2 {
+
+  color:#1d2736;
+
+  font-size:30px;
+
+  margin:8px 0;
+
+}
+
+
+.featured-content h4 {
+
+  color:#6c63ff;
+
+  margin-bottom:10px;
+
+}
+
+
+.featured-content p {
+
+  color:#555;
+
+  line-height:1.6;
+
+}
+
+
+.featured-tag {
+
+  display:inline-block;
+
+  background:#fff3cd;
+
+  color:#856404;
+
+  padding:6px 14px;
+
+  border-radius:25px;
+
+  font-size:12px;
+
+}
+
+
+.featured-info {
+
+  display:flex;
+
+  gap:18px;
+
+  margin-top:15px;
+
+  flex-wrap:wrap;
+
+  color:#444;
+
+}
+
+
+.mentors-page .book-btn {
+
+  margin-top:18px;
+
+  padding:12px 22px;
+
+  background:#6c63ff;
+
+  color:white;
+
+  border:none;
+
+  border-radius:10px;
+
+  cursor:pointer;
+
+  transition:.3s;
+
+  font-weight:600;
+
+}
+
+
+.mentors-page .book-btn:hover {
+
+  background:#5648e8;
+
+}
+
+
+
+/* ============================
+   Search
+============================ */
+
+
+.mentor-search {
+
+  display:flex;
+
+  gap:18px;
+
+  justify-content:center;
+
+  flex-wrap:wrap;
+
+  margin-bottom:40px;
+
+}
+
+
+.mentor-search input,
+.mentor-search select {
+
+  height:52px;
+
+  border-radius:12px;
+
+  border:none;
+
+  outline:none;
+
+  background:white;
+
+  font-size:15px;
+
+  box-shadow:0 4px 12px rgba(0,0,0,.12);
+
+}
+
+
+.mentor-search input {
+
+  width:380px;
+
+  padding:0 18px;
+
+}
+
+
+.mentor-search select {
+
+  width:240px;
+
+  padding:0 15px;
+
+  cursor:pointer;
+
+}
+
+
+
+/* ============================
+   Mentors Grid
+============================ */
+
+
+.mentors-grid {
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+  gap:25px;
+
+}
+
+
+
+/* ============================
+   Mentor Card
+============================ */
+
+
+.mentor-card {
+
+  background:white;
+
+  border-radius:18px;
+
+  padding:25px;
+
+  text-align:center;
+
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+  transition:.3s;
+
+}
+
+
+.mentor-card:hover {
+
+  transform:translateY(-8px);
+
+}
+
+
+
+.mentor-avatar {
+
+  width:75px;
+
+  height:75px;
+
+  margin:auto;
+
+  border-radius:50%;
+
+  background:linear-gradient(135deg,#6c63ff,#8d73ff);
+
+  color:white;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  font-size:24px;
+
+  font-weight:bold;
+
+  margin-bottom:15px;
+
+}
+
+
+
+.mentor-card h2 {
+
+  font-size:22px;
+
+  color:#222;
+
+  margin-bottom:5px;
+
+}
+
+
+.mentor-card h4 {
+
+  color:#666;
+
+  font-size:15px;
+
+  margin-bottom:10px;
+
+}
+
+
+
+.mentor-rating {
+
+  color:#ff9800;
+
+  font-weight:bold;
+
+  margin-bottom:10px;
+
+}
+
+
+
+.mentor-status {
+
+  margin-bottom:12px;
+
+}
+
+
+
+.available {
+
+  color:green;
+
+  font-weight:600;
+
+}
+
+
+
+.busy {
+
+  color:red;
+
+  font-weight:600;
+
+}
+
+
+
+/* ============================
+   Skills
+============================ */
+
+
+.mentor-skills {
+
+  display:flex;
+
+  justify-content:center;
+
+  flex-wrap:wrap;
+
+  gap:7px;
+
+  margin:15px 0;
+
+}
+
+
+.skill-pill {
+
+  background:#eef2ff;
+
+  color:#555;
+
+  padding:6px 11px;
+
+  border-radius:20px;
+
+  font-size:12px;
+
+}
+
+
+
+.mentor-exp,
+.mentor-students {
+
+  color:#555;
+
+  font-size:14px;
+
+  margin:5px 0;
+
+}
+
+
+
+/* ============================
+   Buttons (FIXED)
+============================ */
+
+
+.mentors-page .mentor-buttons {
+
+  display:flex;
+
+  gap:10px;
+
+  margin-top:18px;
+
+}
+
+
+
+.mentors-page .profile-btn,
+.mentors-page .session-btn {
+
+  flex:1;
+
+  padding:11px 14px;
+
+  border:none;
+
+  border-radius:10px;
+
+  cursor:pointer;
+
+  font-size:14px;
+
+  font-weight:600;
+
+  transition:.3s;
+
+}
+
+
+
+.mentors-page .profile-btn {
+
+  background:#ececec;
+
+  color:#333;
+
+}
+
+
+.mentors-page .profile-btn:hover {
+
+  background:#dddddd;
+
+  transform:translateY(-2px);
+
+}
+
+
+
+.mentors-page .session-btn {
+
+  background:#6c63ff;
+
+  color:white;
+
+}
+
+
+.mentors-page .session-btn:hover {
+
+  background:#5648e8;
+
+  transform:translateY(-2px);
+
+}
+
+
+
+/* ============================
+   Responsive
+============================ */
+
+
+@media(max-width:768px){
+
+
+  .mentors-page {
+
+    padding:95px 20px 30px;
+
+  }
+
+
+  .featured-mentor {
+
+    flex-direction:column;
+
+    text-align:center;
+
+  }
+
+
+  .featured-info {
+
+    justify-content:center;
+
+  }
+
+
+  .mentor-search {
+
+    flex-direction:column;
+
+    align-items:center;
+
+  }
+
+
+  .mentor-search input,
+  .mentor-search select {
+
+    width:100%;
+
+    max-width:420px;
+
+  }
+
+
+  .mentors-page .mentor-buttons {
+
+    flex-direction:column;
+
+  }
+
+
+  .mentors-page .profile-btn,
+  .mentors-page .session-btn {
+
+    width:100%;
+
+  }
+
+}

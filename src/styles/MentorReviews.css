@@ -1,0 +1,524 @@
+/* =========================================
+   MENTOR REVIEWS PAGE
+   EduConnect Theme
+   ========================================= */
+
+.mentor-reviews-page {
+
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(124, 58, 237, 0.18),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            rgba(167, 139, 250, 0.10),
+            transparent 35%
+        ),
+        #0f172a;
+
+    padding-top: 110px;
+
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.mentor-reviews-header {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.mentor-reviews-header h1 {
+
+    font-size: 38px;
+
+    margin-bottom: 10px;
+
+    color: #ffffff;
+}
+
+
+.mentor-reviews-header p {
+
+    font-size: 16px;
+
+    color: #cbd5e1;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   RATING SUMMARY
+   ========================================= */
+
+.rating-summary {
+
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+
+    padding: 25px 35px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 60px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(124, 58, 237, 0.18),
+            rgba(167, 139, 250, 0.06)
+        );
+
+    border: 1px solid
+        rgba(167, 139, 250, 0.22);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Average */
+
+.average-rating,
+.total-reviews {
+
+    text-align: center;
+
+    min-width: 180px;
+}
+
+
+.average-number {
+
+    font-size: 38px;
+
+    font-weight: 700;
+
+    color: #ffffff;
+
+    line-height: 1;
+}
+
+
+.average-stars {
+
+    margin: 8px 0;
+}
+
+
+.average-rating p,
+.total-reviews p {
+
+    margin: 5px 0 0;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+}
+
+
+/* Divider */
+
+.rating-divider {
+
+    width: 1px;
+
+    height: 80px;
+
+    background:
+        rgba(167, 139, 250, 0.25);
+}
+
+
+/* Total reviews */
+
+.review-count {
+
+    font-size: 38px;
+
+    font-weight: 700;
+
+    color: #a78bfa;
+
+    line-height: 1;
+}
+
+
+.review-label {
+
+    margin-top: 8px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   REVIEW GRID
+   ========================================= */
+
+.reviews-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+/* =========================================
+   REVIEW CARD
+   ========================================= */
+
+.review-card {
+
+    background:
+        rgba(30, 27, 75, 0.88);
+
+    padding: 28px;
+
+    border-radius: 18px;
+
+    border: 1px solid
+        rgba(167, 139, 250, 0.16);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.30);
+
+    transition: all 0.25s ease;
+}
+
+
+.review-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color:
+        rgba(167, 139, 250, 0.40);
+
+    box-shadow:
+        0 18px 38px
+        rgba(124, 58, 237, 0.20);
+}
+
+
+/* =========================================
+   REVIEW TOP
+   ========================================= */
+
+.review-top {
+
+    margin-bottom: 14px;
+}
+
+
+.student-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.student-avatar {
+
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(124, 58, 237, 0.16);
+
+    border: 1px solid
+        rgba(167, 139, 250, 0.25);
+
+    font-size: 22px;
+}
+
+
+.review-card h2 {
+
+    margin: 0 0 3px;
+
+    font-size: 18px;
+
+    color: #ffffff;
+}
+
+
+.review-date {
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   STAR RATING
+   ========================================= */
+
+.rating {
+
+    display: flex;
+
+    gap: 3px;
+
+    margin-bottom: 15px;
+}
+
+
+.star {
+
+    font-size: 20px;
+
+    line-height: 1;
+}
+
+
+.star.filled {
+
+    color: #a78bfa;
+
+    text-shadow:
+        0 0 8px rgba(167, 139, 250, 0.35);
+}
+
+
+.star.empty {
+
+    color: #475569;
+}
+
+
+/* =========================================
+   FEEDBACK
+   ========================================= */
+
+.review-feedback {
+
+    color: #cbd5e1;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin: 0 0 20px;
+
+    font-style: italic;
+}
+
+
+/* =========================================
+   REVIEW DETAILS
+   ========================================= */
+
+.review-details {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid
+        rgba(167, 139, 250, 0.12);
+}
+
+
+.review-details span {
+
+    color: #c4b5fd;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   NO REVIEWS
+   ========================================= */
+
+.no-reviews {
+
+    background:
+        rgba(30, 27, 75, 0.88);
+
+    border: 1px solid
+        rgba(167, 139, 250, 0.18);
+
+    max-width: 550px;
+
+    margin: 80px auto;
+
+    padding: 45px 35px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.30);
+}
+
+
+.empty-review-icon {
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+
+.loading-icon {
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+
+.no-reviews h2 {
+
+    font-size: 25px;
+
+    color: #ffffff;
+
+    margin-bottom: 10px;
+}
+
+
+.no-reviews p {
+
+    color: #cbd5e1;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .mentor-reviews-page {
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+
+    .mentor-reviews-header h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .rating-summary {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 25px;
+
+    }
+
+
+    .rating-divider {
+
+        width: 100%;
+
+        height: 1px;
+
+    }
+
+
+    .reviews-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .mentor-reviews-page {
+
+        padding-left: 12px;
+        padding-right: 12px;
+
+    }
+
+
+    .mentor-reviews-header h1 {
+
+        font-size: 26px;
+
+    }
+
+
+    .mentor-reviews-header p {
+
+        font-size: 14px;
+
+    }
+
+
+    .review-card {
+
+        padding: 22px;
+
+    }
+
+}

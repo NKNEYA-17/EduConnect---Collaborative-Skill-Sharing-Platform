@@ -1,0 +1,1914 @@
+I developed a Carpooling Application that enables users to offer, search, and book rides easily. The system includes secure authentication, ride management, and real-time booking features, aiming to reduce travel costs and promote shared transportation.
+
+Frontend: React.js / HTML / CSS / JavaScript
+Backend: Spring Boot
+Database: MySQL
+API Testing: Postman
+Tools: VS Code / Eclipse
+
+“I developed a Digital Locker System that allows users to securely store, manage, and access important documents online. It includes user authentication, secure file upload and download features, ensuring safe and centralized digital document management.”
+
+Frontend: React.js / HTML / CSS / JavaScript
+Backend: Spring Boot
+Database: MySQL
+File Handling: REST APIs with Multipart File Upload
+Tools: VS Code / Eclipse
+
+During my one-month internship at Ettiksoft, I developed a Learning Management System for students. The platform allows students to access course materials, view content, and manage their learning activities through a responsive and user-friendly interface.
+
+Frontend: React.js, HTML, CSS
+Database: MongoDB
+Tools: VS Code
+
+
+
+
+
+
+/* 🌤️ LIGHTER BACKGROUND */
+.landing {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  background: radial-gradient(circle at top, #2b3a55, #1e293b);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🧠 CENTER CONTAINER */
+.center-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* 🎓 TITLE */
+.title {
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 0 18px rgba(0, 247, 255, 0.35);
+}
+
+/* ✨ SUBTITLE */
+.subtitle {
+  font-size: 22px;
+  color: #7dd3fc;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* ⌨️ TYPEWRITER TEXT */
+.typewriter-text {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #38bdf8;
+  font-weight: 500;
+  text-align: center;
+
+  animation: fadeText 0.5s ease;
+}
+
+@keyframes fadeText {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🚀 BUTTON */
+.start-btn {
+  margin-top: 25px;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: white;
+  font-weight: bold;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.start-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+}
+
+/* 🎈 FLOATING BUBBLES */
+.bubble {
+  position: absolute;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: white;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  animation: floatBubble 6s infinite ease-in-out;
+}
+
+/* 📍 POSITIONS */
+.react { top: 10%; left: 12%; }
+.ai { top: 10%; right: 12%; }
+.guitar { top: 45%; left: 6%; }
+.photo { top: 45%; right: 6%; }
+.python { bottom: 12%; left: 12%; }
+.java { bottom: 12%; right: 12%; }
+
+/* 🌊 FLOAT ANIMATION */
+@keyframes floatBubble {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* 🌟 HOME TRANSITION */
+.fade-home {
+  animation: fadeHome 1.2s ease forwards;
+}
+
+@keyframes fadeHome {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+
+
+import Navbar from "../components/Navbar";
+import "../styles/Home.css";
+
+function Home() {
+  return (
+    <>
+      <Navbar />
+
+      <div className="home">
+
+        <section className="hero">
+
+          <h1>
+            Learn Skills.
+            <br />
+            Teach Others.
+            <br />
+            Grow Together.
+          </h1>
+
+          <p>
+            Connect with learners and mentors from around the world.
+            Share your knowledge, build your profile, and grow together.
+          </p>
+
+          <div className="hero-buttons">
+            <button className="primary-btn">
+              Explore Skills
+            </button>
+
+            <button className="secondary-btn">
+              Become a Mentor
+            </button>
+          </div>
+
+        </section>
+
+      </div>
+    </>
+  );
+}
+
+export default Home;
+
+
+
+
+import Navbar from "../components/Navbar";
+import FeatureSection from "../components/FeatureSection";
+
+import "../styles/Home.css";
+
+function Home() {
+  return (
+    <>
+      {/* Navbar */}
+      <Navbar />
+
+      {/* Home Page */}
+      <div className="home">
+
+        {/* Hero Section */}
+        <section className="hero">
+
+          <h1>
+            Learn Skills.
+            <br />
+            Teach Others.
+            <br />
+            Grow Together.
+          </h1>
+
+          <p>
+            Connect with learners and mentors from around the world.
+            Share your knowledge, discover new skills,
+            and build your learning journey with EduConnect.
+          </p>
+
+          <div className="hero-buttons">
+            <button className="primary-btn">
+              🚀 Explore Skills
+            </button>
+
+            <button className="secondary-btn">
+              👨‍🏫 Become a Mentor
+            </button>
+          </div>
+
+        </section>
+
+        {/* Feature Section */}
+        <FeatureSection />
+
+      </div>
+    </>
+  );
+}
+
+export default Home;
+
+
+landingpage
+
+import { useState, useEffect } from "react";
+import Home from "./Home";
+import "./LandingPage.css";
+
+function LandingPage() {
+
+  const [showButton, setShowButton] = useState(false);
+  const [enterHome, setEnterHome] = useState(false);
+
+  // ⌨️ Typewriter phrases
+  const phrases = [
+    "Learn Together...",
+    "Teach Others...",
+    "Grow Together...",
+    "Connect Globally...",
+    "Exchange Knowledge..."
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  // ⌨️ Auto changing text
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % phrases.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // ⏳ Show Explore button after 3s
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowButton(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  // 🚀 Navigate to Home
+  if (enterHome) {
+    return (
+      <div className="fade-home">
+        <Home />
+      </div>
+    );
+  }
+
+  return (
+    <div className="landing">
+
+      {/* 🎈 Floating bubbles */}
+      <div className="bubble react">⚛ React</div>
+      <div className="bubble ai">🤖 AI</div>
+      <div className="bubble python">🐍 Python</div>
+      <div className="bubble java">☕ Java</div>
+      <div className="bubble guitar">🎸 Guitar</div>
+      <div className="bubble photo">📸 Photography</div>
+
+      {/* 🧠 CENTER CONTENT */}
+      <div className="center-box">
+
+        <h1 className="title">EduConnect</h1>
+
+        <h2 className="subtitle">
+          Learn. Teach. Grow Together.
+        </h2>
+
+        {/* ⌨️ TYPEWRITER TEXT */}
+        <p className="typewriter-text">
+          {phrases[index]}
+        </p>
+
+        {/* ✨ Explore Button */}
+        {showButton && (
+          <button
+            className="start-btn"
+            onClick={() => setEnterHome(true)}
+          >
+            ✨ Explore
+          </button>
+        )}
+
+      </div>
+
+    </div>
+  );
+}
+
+export default LandingPage;
+
+
+Navbar.css
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 75px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 60px;
+
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    font-size: 30px;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigation */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e2e8f0;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #8b5cf6;
+}
+
+/* Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.login-btn,
+.register-btn {
+    padding: 10px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.login-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid #8b5cf6;
+}
+
+.login-btn:hover {
+    background: #8b5cf6;
+}
+
+.register-btn {
+    background: #8b5cf6;
+    color: white;
+    border: none;
+}
+
+.register-btn:hover {
+    background: #7c3aed;
+}
+
+
+
+App.jsx
+import { Routes, Route } from "react-router-dom";
+
+import LandingPage from "./pages/LandingPage";
+import Home from "./pages/Home";
+import Skills from "./pages/Skills";
+
+function App() {
+  return (
+    <Routes>
+
+      <Route path="/" element={<LandingPage />} />
+
+      <Route path="/home" element={<Home />} />
+
+      <Route path="/skills" element={<Skills />} />
+
+    </Routes>
+  );
+}
+
+export default App;
+
+
+Skills.jsx
+import { useState } from "react";
+import Navbar from "../components/Navbar";
+import "../styles/Skills.css";
+
+function Skills() {
+  const skills = [
+    {
+      icon: "⚛️",
+      name: "React",
+      category: "Programming",
+      mentors: "120 Mentors",
+      rating: "★★★★★"
+    },
+    {
+      icon: "☕",
+      name: "Java",
+      category: "Programming",
+      mentors: "95 Mentors",
+      rating: "★★★★☆"
+    },
+    {
+      icon: "🐍",
+      name: "Python",
+      category: "Programming",
+      mentors: "180 Mentors",
+      rating: "★★★★★"
+    },
+    {
+      icon: "🤖",
+      name: "Artificial Intelligence",
+      category: "AI",
+      mentors: "80 Mentors",
+      rating: "★★★★★"
+    },
+    {
+      icon: "🎨",
+      name: "UI / UX",
+      category: "Design",
+      mentors: "60 Mentors",
+      rating: "★★★★☆"
+    },
+    {
+      icon: "🌐",
+      name: "Web Development",
+      category: "Programming",
+      mentors: "140 Mentors",
+      rating: "★★★★★"
+    },
+    {
+      icon: "📱",
+      name: "Flutter",
+      category: "Programming",
+      mentors: "55 Mentors",
+      rating: "★★★★☆"
+    },
+    {
+      icon: "☁️",
+      name: "AWS",
+      category: "Cloud",
+      mentors: "40 Mentors",
+      rating: "★★★★☆"
+    },
+    {
+      icon: "🍃",
+      name: "Spring Boot",
+      category: "Programming",
+      mentors: "75 Mentors",
+      rating: "★★★★★"
+    }
+  ];
+
+  const [search, setSearch] = useState("");
+
+  const filteredSkills = skills.filter((skill) =>
+    skill.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  return (
+    <>
+      <Navbar />
+
+      <div className="skills-page">
+
+        <div className="skills-header">
+
+          <h1>Explore Skills</h1>
+
+          <p>
+            Discover new skills, connect with mentors,
+            and begin your learning journey.
+          </p>
+
+          <input
+            type="text"
+            placeholder="🔍 Search skills..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+
+        </div>
+
+        <div className="skills-grid">
+
+          {filteredSkills.map((skill, index) => (
+
+            <div className="skill-card" key={index}>
+
+              <div className="skill-icon">
+                {skill.icon}
+              </div>
+
+              <h3>{skill.name}</h3>
+
+              <p>{skill.category}</p>
+
+              <span>{skill.rating}</span>
+
+              <h4>{skill.mentors}</h4>
+
+              <button>View Skill →</button>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+    </>
+  );
+}
+
+export default Skills;
+
+
+skill.css
+.skills-page {
+    min-height: 100vh;
+    padding: 120px 8% 80px;
+    background: linear-gradient(135deg, #334155, #475569, #64748b);
+    color: white;
+}
+
+.skills-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.skills-header h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+.skills-header p {
+    font-size: 18px;
+    color: #e2e8f0;
+    margin-bottom: 30px;
+}
+
+.skills-header input {
+    width: 420px;
+    max-width: 90%;
+    padding: 16px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255,255,255,0.12);
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+.skills-header input::placeholder {
+    color: #e2e8f0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.skill-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: .35s;
+    border: 1px solid rgba(255,255,255,.12);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(0,0,0,.25);
+}
+
+.skill-icon {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #cbd5e1;
+}
+
+.skill-card span {
+    display: block;
+    margin: 15px 0;
+}
+
+.skill-card h4 {
+    margin-bottom: 20px;
+}
+
+.skill-card button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    background: #8b5cf6;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.skill-card button:hover {
+    background: #7c3aed;
+}
+
+@media(max-width:992px){
+
+.skills-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:650px){
+
+.skills-grid{
+grid-template-columns:1fr;
+}
+
+.skills-header h1{
+font-size:38px;
+}
+
+}
+
+
+skills.jsx
+import { useState } from "react";
+import Navbar from "../components/Navbar";
+import "../styles/Skills.css";
+
+function Skills() {
+  const skills = [
+    {
+      icon: "⚛️",
+      name: "React",
+      category: "Programming",
+      mentors: "120 Mentors",
+      rating: "★★★★★",
+      level: "Beginner"
+    },
+    {
+      icon: "☕",
+      name: "Java",
+      category: "Programming",
+      mentors: "95 Mentors",
+      rating: "★★★★☆",
+      level: "Intermediate"
+    },
+    {
+      icon: "🐍",
+      name: "Python",
+      category: "Programming",
+      mentors: "180 Mentors",
+      rating: "★★★★★",
+      level: "Beginner"
+    },
+    {
+      icon: "🍃",
+      name: "Spring Boot",
+      category: "Programming",
+      mentors: "75 Mentors",
+      rating: "★★★★★",
+      level: "Advanced"
+    },
+    {
+      icon: "📱",
+      name: "Flutter",
+      category: "Mobile Development",
+      mentors: "55 Mentors",
+      rating: "★★★★☆",
+      level: "Intermediate"
+    },
+    {
+      icon: "🤖",
+      name: "Artificial Intelligence",
+      category: "Artificial Intelligence",
+      mentors: "80 Mentors",
+      rating: "★★★★★",
+      level: "Advanced"
+    },
+    {
+      icon: "🧠",
+      name: "Machine Learning",
+      category: "Artificial Intelligence",
+      mentors: "65 Mentors",
+      rating: "★★★★★",
+      level: "Intermediate"
+    },
+    {
+      icon: "📊",
+      name: "Deep Learning",
+      category: "Artificial Intelligence",
+      mentors: "45 Mentors",
+      rating: "★★★★★",
+      level: "Advanced"
+    },
+    {
+      icon: "🌐",
+      name: "Web Development",
+      category: "Web Development",
+      mentors: "140 Mentors",
+      rating: "★★★★★",
+      level: "Beginner"
+    },
+    {
+      icon: "☁️",
+      name: "AWS",
+      category: "Cloud Computing",
+      mentors: "40 Mentors",
+      rating: "★★★★☆",
+      level: "Intermediate"
+    },
+    {
+      icon: "🎨",
+      name: "UI / UX Design",
+      category: "UI / UX Design",
+      mentors: "60 Mentors",
+      rating: "★★★★☆",
+      level: "Beginner"
+    },
+    {
+      icon: "📈",
+      name: "Data Science",
+      category: "Data Science",
+      mentors: "50 Mentors",
+      rating: "★★★★★",
+      level: "Intermediate"
+    },
+    {
+      icon: "📷",
+      name: "Photography",
+      category: "Photography",
+      mentors: "30 Mentors",
+      rating: "★★★★☆",
+      level: "Beginner"
+    },
+    {
+      icon: "🎵",
+      name: "Music",
+      category: "Music",
+      mentors: "28 Mentors",
+      rating: "★★★★☆",
+      level: "Beginner"
+    },
+    {
+      icon: "💼",
+      name: "Business Strategy",
+      category: "Business",
+      mentors: "42 Mentors",
+      rating: "★★★★☆",
+      level: "Advanced"
+    }
+  ];
+
+  const [search, setSearch] = useState("");
+  const [category, setCategory] = useState("All Categories");
+
+  const filteredSkills = skills.filter((skill) => {
+    const matchesSearch = skill.name
+      .toLowerCase()
+      .includes(search.toLowerCase());
+
+    const matchesCategory =
+      category === "All Categories" ||
+      skill.category === category;
+
+    return matchesSearch && matchesCategory;
+  });
+
+  return (
+    <>
+      <Navbar />
+
+      <div className="skills-page">
+
+        <div className="skills-header">
+
+          <h1>Explore Skills</h1>
+
+          <p>
+            Discover new skills, connect with mentors,
+            and begin your learning journey.
+          </p>
+
+          <div className="search-container">
+
+            <input
+              type="text"
+              placeholder="🔍 Search skills..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+
+            <select
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+            >
+              <option>All Categories</option>
+              <option>Programming</option>
+              <option>Artificial Intelligence</option>
+              <option>Web Development</option>
+              <option>Mobile Development</option>
+              <option>Cloud Computing</option>
+              <option>UI / UX Design</option>
+              <option>Data Science</option>
+              <option>Photography</option>
+              <option>Music</option>
+              <option>Business</option>
+            </select>
+
+          </div>
+
+        </div>
+
+        <div className="skills-grid">
+
+          {filteredSkills.map((skill, index) => (
+
+            <div className="skill-card" key={index}>
+
+              <div className="skill-icon">
+                {skill.icon}
+              </div>
+
+              <h3>{skill.name}</h3>
+
+              <p>{skill.category}</p>
+
+              <span>{skill.rating}</span>
+
+              <h4>{skill.mentors}</h4>
+
+              <div className="level-badge">
+                {skill.level}
+              </div>
+
+              <button>View Skill →</button>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+    </>
+  );
+}
+
+export default Skills;
+
+
+skills.css
+.skills-page {
+    min-height: 100vh;
+    padding: 120px 8% 80px;
+    background: linear-gradient(135deg, #435b76, #526d8a, #6482a3);
+    color: white;
+}
+
+/* ================= Header ================= */
+
+.skills-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.skills-header h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.skills-header p {
+    font-size: 18px;
+    color: #e2e8f0;
+    margin-bottom: 35px;
+}
+
+/* ================= Search + Dropdown ================= */
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.search-container input {
+    width: 380px;
+    max-width: 100%;
+    padding: 16px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255,255,255,0.12);
+    color: white;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.search-container input::placeholder {
+    color: #dbeafe;
+}
+
+.search-container input:focus {
+    box-shadow: 0 0 12px rgba(139,92,246,0.6);
+}
+
+.search-container select {
+    padding: 16px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.12);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.search-container select:focus {
+    box-shadow: 0 0 12px rgba(139,92,246,0.6);
+}
+
+.search-container option {
+    color: black;
+}
+
+/* ================= Skills Grid ================= */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* ================= Skill Card ================= */
+
+.skill-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.35s;
+    border: 1px solid rgba(255,255,255,.12);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 35px rgba(0,0,0,.25);
+}
+
+.skill-icon {
+    font-size: 58px;
+    margin-bottom: 18px;
+}
+
+.skill-card h3 {
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.skill-card p {
+    color: #dbeafe;
+    margin-bottom: 10px;
+}
+
+.skill-card span {
+    display: block;
+    margin: 12px 0;
+    color: gold;
+    font-size: 18px;
+}
+
+.skill-card h4 {
+    margin-bottom: 15px;
+    color: #f8fafc;
+}
+
+/* ================= Skill Level ================= */
+
+.level-badge {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 7px 16px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Beginner */
+
+.level-badge:has(+ button),
+.level-badge.beginner {
+    background: #10b981;
+}
+
+/* Intermediate */
+
+.level-badge.intermediate {
+    background: #f59e0b;
+}
+
+/* Advanced */
+
+.level-badge.advanced {
+    background: #ef4444;
+}
+
+/* ================= Button ================= */
+
+.skill-card button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    background: #8b5cf6;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.skill-card button:hover {
+    background: #7c3aed;
+    transform: scale(1.05);
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:992px){
+
+.skills-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.search-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.search-container input,
+.search-container select{
+    width:100%;
+    max-width:420px;
+}
+
+}
+
+@media(max-width:650px){
+
+.skills-grid{
+    grid-template-columns:1fr;
+}
+
+.skills-header h1{
+    font-size:38px;
+}
+
+.skills-header p{
+    font-size:16px;
+}
+
+}
+
+
+
+
+import { useState } from "react";
+import Navbar from "../components/Navbar";
+import "../styles/Skills.css";
+
+function Skills() {
+
+  const skills = [
+
+    {
+      icon: "⚛️",
+      name: "React",
+      category: "Programming",
+      mentors: "120 Mentors",
+      rating: "★★★★★",
+      level: "Beginner"
+    },
+
+    {
+      icon: "☕",
+      name: "Java",
+      category: "Programming",
+      mentors: "95 Mentors",
+      rating: "★★★★☆",
+      level: "Intermediate"
+    },
+
+    {
+      icon: "🐍",
+      name: "Python",
+      category: "Programming",
+      mentors: "180 Mentors",
+      rating: "★★★★★",
+      level: "Beginner"
+    },
+
+    {
+      icon: "🍃",
+      name: "Spring Boot",
+      category: "Programming",
+      mentors: "75 Mentors",
+      rating: "★★★★★",
+      level: "Advanced"
+    },
+
+    {
+      icon: "🌐",
+      name: "Web Development",
+      category: "Web Development",
+      mentors: "140 Mentors",
+      rating: "★★★★★",
+      level: "Beginner"
+    },
+
+    {
+      icon: "📱",
+      name: "Flutter",
+      category: "Mobile Development",
+      mentors: "55 Mentors",
+      rating: "★★★★☆",
+      level: "Intermediate"
+    },
+
+    {
+      icon: "🤖",
+      name: "Artificial Intelligence",
+      category: "Artificial Intelligence",
+      mentors: "80 Mentors",
+      rating: "★★★★★",
+      level: "Advanced"
+    },
+
+    {
+      icon: "🧠",
+      name: "Machine Learning",
+      category: "Artificial Intelligence",
+      mentors: "65 Mentors",
+      rating: "★★★★★",
+      level: "Intermediate"
+    },
+
+    {
+      icon: "📊",
+      name: "Deep Learning",
+      category: "Artificial Intelligence",
+      mentors: "45 Mentors",
+      rating: "★★★★★",
+      level: "Advanced"
+    },
+
+    {
+      icon: "☁️",
+      name: "AWS",
+      category: "Cloud Computing",
+      mentors: "40 Mentors",
+      rating: "★★★★☆",
+      level: "Intermediate"
+    },
+
+    {
+      icon: "🎨",
+      name: "UI / UX Design",
+      category: "UI / UX Design",
+      mentors: "60 Mentors",
+      rating: "★★★★☆",
+      level: "Beginner"
+    },
+
+    {
+      icon: "📈",
+      name: "Data Science",
+      category: "Data Science",
+      mentors: "50 Mentors",
+      rating: "★★★★★",
+      level: "Intermediate"
+    },
+
+    {
+      icon: "📷",
+      name: "Photography",
+      category: "Photography",
+      mentors: "30 Mentors",
+      rating: "★★★★☆",
+      level: "Beginner"
+    },
+
+    {
+      icon: "🎵",
+      name: "Music",
+      category: "Music",
+      mentors: "28 Mentors",
+      rating: "★★★★☆",
+      level: "Beginner"
+    },
+
+    {
+      icon: "💼",
+      name: "Business Strategy",
+      category: "Business",
+      mentors: "42 Mentors",
+      rating: "★★★★☆",
+      level: "Advanced"
+    }
+
+  ];
+
+  const [search, setSearch] = useState("");
+  const [category, setCategory] = useState("All Categories");
+
+  const filteredSkills = skills.filter((skill) => {
+
+    const matchesSearch =
+      skill.name.toLowerCase().includes(search.toLowerCase());
+
+    const matchesCategory =
+      category === "All Categories" ||
+      skill.category === category;
+
+    return matchesSearch && matchesCategory;
+
+  });
+  return (
+    <>
+      <Navbar />
+
+      <div className="skills-page">
+
+        <div className="skills-header">
+
+          <h1>Explore Skills</h1>
+
+          <p>
+            Discover new skills, connect with mentors,
+            and begin your learning journey.
+          </p>
+
+          {/* 🔥 Trending Skills */}
+
+          <div className="trending-section">
+
+            <h3>🔥 Trending Skills</h3>
+
+            <div className="trending-skills">
+
+              <button
+                onClick={() => {
+                  setSearch("React");
+                  setCategory("Programming");
+                }}
+              >
+                ⚛ React
+              </button>
+
+              <button
+                onClick={() => {
+                  setSearch("Artificial Intelligence");
+                  setCategory("Artificial Intelligence");
+                }}
+              >
+                🤖 AI
+              </button>
+
+              <button
+                onClick={() => {
+                  setSearch("AWS");
+                  setCategory("Cloud Computing");
+                }}
+              >
+                ☁ AWS
+              </button>
+
+              <button
+                onClick={() => {
+                  setSearch("Spring Boot");
+                  setCategory("Programming");
+                }}
+              >
+                🍃 Spring Boot
+              </button>
+
+              <button
+                onClick={() => {
+                  setSearch("Python");
+                  setCategory("Programming");
+                }}
+              >
+                🐍 Python
+              </button>
+
+            </div>
+
+          </div>
+
+          {/* 🔍 Search + Category + Reset */}
+
+          <div className="search-container">
+
+            <input
+              type="text"
+              placeholder="🔍 Search Skills..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+
+            <select
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+            >
+              <option>All Categories</option>
+              <option>Programming</option>
+              <option>Artificial Intelligence</option>
+              <option>Web Development</option>
+              <option>Mobile Development</option>
+              <option>Cloud Computing</option>
+              <option>UI / UX Design</option>
+              <option>Data Science</option>
+              <option>Photography</option>
+              <option>Music</option>
+              <option>Business</option>
+            </select>
+
+            <button
+              className="reset-btn"
+              onClick={() => {
+                setSearch("");
+                setCategory("All Categories");
+              }}
+            >
+              🔄 Reset
+            </button>
+
+          </div>
+
+        </div>
+
+        <div className="skills-grid">
+
+          {filteredSkills.length > 0 ? (
+
+            filteredSkills.map((skill, index) => (
+
+              <div className="skill-card" key={index}>
+
+                <div className="skill-icon">
+                  {skill.icon}
+                </div>
+
+                <h3>{skill.name}</h3>
+
+                <p>{skill.category}</p>
+
+                <span>{skill.rating}</span>
+
+                <h4>{skill.mentors}</h4>
+
+                <div className={`level-badge ${skill.level.toLowerCase()}`}>
+                  {skill.level}
+                </div>
+
+                <button>
+                  View Skill →
+                </button>
+
+              </div>
+
+            ))
+
+          ) : (
+
+            <div className="no-results">
+
+              <h2>😔 No Skills Found</h2>
+
+              <p>
+                Try another search keyword or select a different category.
+              </p>
+
+              <button
+                className="reset-btn"
+                onClick={() => {
+                  setSearch("");
+                  setCategory("All Categories");
+                }}
+              >
+                Show All Skills
+              </button>
+
+            </div>
+
+          )}
+
+        </div>
+
+      </div>
+    </>
+  );
+}
+
+export default Skills;
+
+
+mentors.jsx
+
+import { useState } from "react";
+import Navbar from "../components/Navbar";
+import "../styles/Mentors.css";
+
+function Mentors() {
+
+  const mentors = [
+
+    {
+      id: 1,
+      name: "Sarah Johnson",
+      initials: "SJ",
+      role: "Senior React Mentor",
+      skills: ["React", "JavaScript", "UI / UX"],
+      category: "Programming",
+      experience: "8 Years",
+      rating: "4.9",
+      students: "850+ Students",
+      status: "Available"
+    },
+
+    {
+      id: 2,
+      name: "David Kumar",
+      initials: "DK",
+      role: "AI & Python Mentor",
+      skills: ["Python", "Machine Learning", "Artificial Intelligence"],
+      category: "Artificial Intelligence",
+      experience: "6 Years",
+      rating: "4.8",
+      students: "620+ Students",
+      status: "Available"
+    },
+
+    {
+      id: 3,
+      name: "Emily Chen",
+      initials: "EC",
+      role: "Java Full Stack Mentor",
+      skills: ["Java", "Spring Boot"],
+      category: "Programming",
+      experience: "10 Years",
+      rating: "5.0",
+      students: "1100+ Students",
+      status: "Busy"
+    },
+
+    {
+      id: 4,
+      name: "Alex Wilson",
+      initials: "AW",
+      role: "Flutter Developer",
+      skills: ["Flutter", "Dart"],
+      category: "Mobile Development",
+      experience: "5 Years",
+      rating: "4.7",
+      students: "430+ Students",
+      status: "Available"
+    },
+
+    {
+      id: 5,
+      name: "Priya Sharma",
+      initials: "PS",
+      role: "Cloud Engineer",
+      skills: ["AWS", "Cloud Computing"],
+      category: "Cloud Computing",
+      experience: "7 Years",
+      rating: "4.8",
+      students: "540+ Students",
+      status: "Available"
+    },
+
+    {
+      id: 6,
+      name: "Michael Lee",
+      initials: "ML",
+      role: "Data Scientist",
+      skills: ["Data Science", "Python"],
+      category: "Data Science",
+      experience: "9 Years",
+      rating: "4.9",
+      students: "900+ Students",
+      status: "Busy"
+    }
+
+  ];
+
+  const [search, setSearch] = useState("");
+  const [category, setCategory] = useState("All Skills");
+
+  const filteredMentors = mentors.filter((mentor) => {
+
+    const matchesSearch =
+      mentor.name.toLowerCase().includes(search.toLowerCase()) ||
+      mentor.skills.some(skill =>
+        skill.toLowerCase().includes(search.toLowerCase())
+      );
+
+    const matchesCategory =
+      category === "All Skills" ||
+      mentor.category === category;
+
+    return matchesSearch && matchesCategory;
+
+  });
+  return (
+    <>
+      <Navbar />
+
+      <div className="mentors-page">
+
+        {/* Hero Section */}
+
+        <div className="mentors-header">
+
+          <h1>👨‍🏫 Find Your Mentor</h1>
+
+          <p>
+            Learn directly from experienced mentors around the world.
+            Connect, collaborate, and grow your skills.
+          </p>
+
+        </div>
+
+        {/* Featured Mentor */}
+
+        <div className="featured-mentor">
+
+          <div className="featured-avatar">
+            SJ
+          </div>
+
+          <div className="featured-content">
+
+            <span className="featured-tag">
+              ⭐ Featured Mentor of the Week
+            </span>
+
+            <h2>Sarah Johnson</h2>
+
+            <h4>Senior React Mentor</h4>
+
+            <p>
+              Passionate about helping students become
+              industry-ready React Developers.
+            </p>
+
+            <div className="featured-info">
+
+              <span>⭐ 4.9</span>
+
+              <span>👨‍🎓 850+ Students</span>
+
+              <span>💼 8 Years Experience</span>
+
+            </div>
+
+            <button className="book-btn">
+              📅 Book a Session
+            </button>
+
+          </div>
+
+        </div>
+
+        {/* Search */}
+
+        <div className="mentor-search">
+
+          <input
+            type="text"
+            placeholder="🔍 Search Mentor or Skill..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+
+          <select
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+          >
+
+            <option>All Skills</option>
+            <option>Programming</option>
+            <option>Artificial Intelligence</option>
+            <option>Mobile Development</option>
+            <option>Cloud Computing</option>
+            <option>Data Science</option>
+
+          </select>
+
+        </div>
+
+        {/* Mentors Grid */}
+
+        <div className="mentors-grid">
+
+          {filteredMentors.map((mentor) => (
+
+            <div
+              className="mentor-card"
+              key={mentor.id}
+            >
+
+              <div className="mentor-avatar">
+
+                {mentor.initials}
+
+              </div>
+
+              <h2>{mentor.name}</h2>
+
+              <h4>{mentor.role}</h4>
+
+              <div className="mentor-rating">
+
+                ⭐ {mentor.rating}
+
+              </div>
+
+              <div className="mentor-status">
+
+                {mentor.status === "Available" ? (
+
+                  <span className="available">
+                    🟢 Available
+                  </span>
+
+                ) : (
+
+                  <span className="busy">
+                    🔴 Busy
+                  </span>
+
+                )}
+
+              </div>
+
+              <div className="mentor-skills">
+
+                {mentor.skills.map((skill, index) => (
+
+                  <span
+                    key={index}
+                    className="skill-pill"
+                  >
+                    {skill}
+                  </span>
+
+                ))}
+
+              </div>
+
+              <p className="mentor-exp">
+
+                💼 {mentor.experience}
+
+              </p>
+
+              <p className="mentor-students">
+
+                👨‍🎓 {mentor.students}
+
+              </p>
+
+              <div className="mentor-buttons">
+
+                <button className="profile-btn">
+                  View Profile
+                </button>
+
+                <button className="session-btn">
+                  Book Session
+                </button>
+
+              </div>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+    </>
+  );
+}
+
+export default Mentors;
+
+
+App.jsx
+import { Routes, Route } from "react-router-dom";
+
+import LandingPage from "./pages/LandingPage";
+import Home from "./pages/Home";
+import Skills from "./pages/Skills";
+
+function App() {
+  return (
+    <Routes>
+
+      <Route path="/" element={<LandingPage />} />
+
+      <Route path="/home" element={<Home />} />
+
+      <Route path="/skills" element={<Skills />} />
+
+    </Routes>
+  );
+}
+
+export default App;
+
+Navbar.jsx
+import { NavLink } from "react-router-dom";
+import "./../styles/Navbar.css";
+
+function Navbar() {
+  return (
+    <nav className="navbar">
+
+      {/* Logo */}
+      <div className="logo">
+        <span className="logo-icon">🎓</span>
+        <span className="logo-text">EduConnect</span>
+      </div>
+
+      {/* Navigation Links */}
+      <ul className="nav-links">
+
+        <li>
+          <NavLink
+            to="/home"
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
+            Home
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/skills"
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
+            Skills
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/mentors"
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
+            Mentors
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/community"
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
+            Community
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
+            About
+          </NavLink>
+        </li>
+
+      </ul>
+
+      {/* Buttons */}
+      <div className="nav-buttons">
+
+        <NavLink to="/login">
+          <button className="login-btn">Login</button>
+        </NavLink>
+
+        <NavLink to="/register">
+          <button className="register-btn">Register</button>
+        </NavLink>
+
+      </div>
+
+    </nav>
+  );
+}
+
+export default Navbar;
+
+

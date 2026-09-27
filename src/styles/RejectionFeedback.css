@@ -1,0 +1,127 @@
+.rejection-page {
+    min-height: calc(100vh - 80px);
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+.rejection-card {
+    width: 100%;
+    max-width: 850px;
+    background: #252b45;
+    border-radius: 20px;
+    padding: 45px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+    text-align: center;
+}
+
+.rejection-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.rejection-card h1 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.intro-text {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto 35px;
+}
+
+.feedback-section {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.feedback-section h2 {
+    color: #ffffff;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.feedback-box {
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #ffffff;
+}
+
+.reason-box {
+    background: rgba(239, 68, 68, 0.12);
+    border: 1px solid rgba(239, 68, 68, 0.5);
+}
+
+.improvement-box {
+    background: rgba(139, 92, 246, 0.12);
+    border: 1px solid rgba(139, 92, 246, 0.5);
+}
+
+.action-section {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.action-section p {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.apply-again-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #6d4aff, #8b5cf6);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 12px;
+    transition: 0.2s ease;
+}
+
+.apply-again-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(109, 74, 255, 0.35);
+}
+
+.back-btn {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 13px 22px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 650px) {
+
+    .rejection-card {
+        padding: 25px 20px;
+    }
+
+    .rejection-card h1 {
+        font-size: 26px;
+    }
+
+    .apply-again-btn,
+    .back-btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

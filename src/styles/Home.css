@@ -1,0 +1,161 @@
+.home {
+    min-height: 100vh;
+    background: #0f172a;
+    color: white;
+    padding-top: 100px;
+}
+
+
+.hero {
+
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 120px 40px;
+
+    position: relative;
+
+    /* Hero Card */
+    background: #252B42;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 30px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+}
+
+
+/* ===============================
+   Welcome Message
+================================ */
+
+.welcome-message {
+
+    position: absolute;
+
+    top: 35px;
+    left: 0;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    font-size: 22px;
+    font-weight: 600;
+
+    color: #c4b5fd;
+
+    z-index: 2;
+
+}
+
+
+/* ===============================
+   Hero Text
+================================ */
+
+.hero h1 {
+
+    font-size: 64px;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+
+    color: #ffffff;
+
+}
+
+
+
+.hero p:not(.welcome-message) {
+
+    font-size: 20px;
+
+    color: #cbd5e1;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+/* ===============================
+   Hero Buttons
+================================ */
+
+.hero-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+}
+
+
+
+.hero-buttons button {
+
+    padding: 16px 34px !important;
+
+    border: none !important;
+
+    border-radius: 14px !important;
+
+    cursor: pointer;
+
+    font-size: 18px !important;
+
+    font-weight: 600 !important;
+
+    color: white !important;
+
+
+    background: linear-gradient(
+        135deg,
+        #5b4cf0,
+        #7c5cff
+    ) !important;
+
+
+    box-shadow:
+    0 8px 20px rgba(
+        91,
+        76,
+        240,
+        0.35
+    ) !important;
+
+
+    transition: all 0.3s ease !important;
+
+}
+
+
+
+.hero-buttons button:hover {
+
+    background: linear-gradient(
+        135deg,
+        #6a5cff,
+        #8b5cf6
+    ) !important;
+
+
+    transform: translateY(-2px);
+
+
+    box-shadow:
+    0 12px 28px rgba(
+        91,
+        76,
+        240,
+        0.5
+    ) !important;
+
+}

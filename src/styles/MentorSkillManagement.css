@@ -1,0 +1,470 @@
+/* =====================================
+MENTOR SKILL MANAGEMENT PAGE
+===================================== */
+
+
+.mentor-skill-management-page{
+
+    min-height:100vh;
+
+    width:100%;
+
+    box-sizing:border-box;
+
+    background:#0f172a;
+
+    color:white;
+
+    font-family:"Poppins",sans-serif;
+
+    /* FIX NAVBAR OVERLAPPING */
+    padding-top:140px;
+
+    padding-left:60px;
+
+    padding-right:60px;
+
+    padding-bottom:70px;
+
+}
+
+
+
+/* =====================================
+HEADER
+===================================== */
+
+
+.mentor-skill-header{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.mentor-skill-header h1{
+
+    font-size:40px;
+
+    margin-bottom:12px;
+
+    color:white;
+
+}
+
+
+
+.mentor-skill-header p{
+
+    color:#cbd5e1;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* =====================================
+SKILL CARD
+===================================== */
+
+
+.skill-management-card{
+
+
+    max-width:650px;
+
+    margin:auto;
+
+
+    background:#252b42;
+
+
+    padding:40px;
+
+
+    border-radius:25px;
+
+
+    border:1px solid rgba(255,255,255,0.1);
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,0.35);
+
+
+}
+
+
+
+
+
+.skill-management-card h2{
+
+
+    text-align:center;
+
+
+    font-size:26px;
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+
+
+/* =====================================
+INPUT SECTION
+===================================== */
+
+
+.skill-input-section{
+
+
+    display:flex;
+
+
+    gap:15px;
+
+
+}
+
+
+
+
+.skill-input-section input{
+
+
+    flex:1;
+
+
+    padding:14px;
+
+
+    border-radius:10px;
+
+
+    border:1px solid #475569;
+
+
+    outline:none;
+
+
+    background:#1e293b;
+
+
+    color:white;
+
+
+    font-size:15px;
+
+
+}
+
+
+
+.skill-input-section input::placeholder{
+
+
+    color:#94a3b8;
+
+
+}
+
+
+
+
+.skill-input-section button{
+
+
+    padding:14px 25px;
+
+
+    border:none;
+
+
+    border-radius:10px;
+
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #5b4cf0,
+    #7c5cff
+    );
+
+
+    color:white;
+
+
+    font-weight:600;
+
+
+    cursor:pointer;
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+.skill-input-section button:hover{
+
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+
+
+/* =====================================
+ADDED SKILLS
+===================================== */
+
+
+.added-skills{
+
+
+    margin-top:40px;
+
+
+}
+
+
+
+
+.added-skills h3{
+
+
+    margin-bottom:20px;
+
+
+    font-size:20px;
+
+
+}
+
+
+
+
+/* Existing span display */
+
+
+.added-skills span{
+
+
+    display:inline-block;
+
+
+    background:
+
+    rgba(124,92,255,0.2);
+
+
+    border:1px solid #7c5cff;
+
+
+    padding:8px 15px;
+
+
+    border-radius:20px;
+
+
+    margin:5px;
+
+
+    color:#ddd6fe;
+
+
+}
+
+
+
+
+
+.added-skills p{
+
+
+    color:#94a3b8;
+
+
+}
+
+
+
+
+
+/* =====================================
+REMOVE SKILL SUPPORT
+===================================== */
+
+
+.skill-item{
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:space-between;
+
+
+    background:#1e293b;
+
+
+    padding:12px 18px;
+
+
+    border-radius:12px;
+
+
+    margin-bottom:12px;
+
+
+    color:#cbd5e1;
+
+
+    border:1px solid rgba(255,255,255,0.08);
+
+
+}
+
+
+
+
+.skill-item span{
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+
+.skill-item button{
+
+
+    background:#ef4444;
+
+
+    border:none;
+
+
+    color:white;
+
+
+    width:35px;
+
+
+    height:35px;
+
+
+    border-radius:50%;
+
+
+    cursor:pointer;
+
+
+    font-size:14px;
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+
+.skill-item button:hover{
+
+
+    transform:scale(1.1);
+
+
+    background:#dc2626;
+
+
+}
+
+
+
+
+
+/* =====================================
+RESPONSIVE
+===================================== */
+
+
+@media(max-width:768px){
+
+
+    .mentor-skill-management-page{
+
+
+        padding-left:20px;
+
+
+        padding-right:20px;
+
+
+        padding-top:110px;
+
+
+    }
+
+
+
+    .mentor-skill-header h1{
+
+
+        font-size:32px;
+
+
+    }
+
+
+
+    .skill-management-card{
+
+
+        padding:25px;
+
+
+    }
+
+
+
+    .skill-input-section{
+
+
+        flex-direction:column;
+
+
+    }
+
+
+}
